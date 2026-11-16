@@ -1,9 +1,12 @@
 # Thông tin nhóm
 
-- Tên nhóm:
-- Mã thành viên (ba chữ số):
-- Người điều phối:
-- Người review bản cuối:
+- Tên nhóm: HAT
+- Mã thành viên (ba chữ số): 
+  - Nguyễn Minh Nam Hải (2A202603076)
+  - Kiều Quang Trường (2A202603205)
+  - Vũ Việt Anh (2A202603214)
+- Người điều phối: Nguyễn Minh Nam Hải (2A202603076)
+- Người review bản cuối: Kiều Quang Trường (2A202603205)
 - Commit chốt bài (điền ở kênh nộp sau khi commit):
 
 ## Kết quả tóm tắt (điền cuối bài)
