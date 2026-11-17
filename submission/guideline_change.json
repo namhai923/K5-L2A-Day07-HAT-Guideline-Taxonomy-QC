@@ -1,0 +1,4 @@
+{
+  "kind": "semantic",
+  "summary": "v1.1: reviewer chốt img_011 (Predator là tượng) và img_033 (cửa xe là phản chiếu) → không gán, thay cho tạm gán person + can_review; R-06 thêm tủ kính đồ chơi không gán, không ignore. Làm rõ R-05 (dưới 5 vật hoặc tách được thì không dùng ignore_region) và thuộc tính phải đặt theo từng box."
+}
