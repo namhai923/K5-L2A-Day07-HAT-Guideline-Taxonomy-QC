@@ -1,0 +1,767 @@
+case_id,image,issue_type,annotators,class_a,class_b,box_a,box_b,iou,ghi_chu_tu_dong
+C001,img_001.jpg,iou_thap,101|102,person,person,"[378,114,149,205]","[398,113,131,197]",0.81,IoU 0.81 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C002,img_001.jpg,sai_thuoc_tinh,101|102,person,person,"[234,199,151,440]","[232,200,154,440]",0.98,occluded_level: 101=0 vs 102=1; truncated: 101=no vs 102=yes
+C003,img_001.jpg,sai_thuoc_tinh,101|102,person,person,"[90,99,120,332]","[87,99,124,333]",0.97,occluded_level: 101=0 vs 102=2
+C004,img_001.jpg,sai_thuoc_tinh,101|102,person,person,"[117,111,112,296]","[125,113,105,293]",0.91,occluded_level: 101=0 vs 102=2
+C005,img_001.jpg,sai_thuoc_tinh,101|102,person,person,"[323,131,100,175]","[319,129,104,187]",0.90,occluded_level: 101=0 vs 102=1
+C006,img_001.jpg,sai_thuoc_tinh,101|102,person,person,"[220,89,103,195]","[220,90,108,211]",0.87,occluded_level: 101=0 vs 102=1
+C007,img_001.jpg,sai_thuoc_tinh,101|102,truck,truck,"[233,103,727,537]","[333,97,627,543]",0.86,truncated: 101=no vs 102=yes
+C008,img_002.jpg,bo_sot_thua,101|102,car,,"[887,303,49,17]",,,Chỉ 101 vẽ car này. 102 bỏ sót hoặc 101 vẽ thừa.
+C009,img_002.jpg,bo_sot_thua,101|102,person,,"[860,315,30,110]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C010,img_002.jpg,iou_thap,101|102,truck,truck,"[136,139,783,397]","[129,45,771,493]",0.78,IoU 0.78 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C011,img_002.jpg,iou_thap,101|102,car,car,"[492,255,103,127]","[476,254,124,137]",0.77,IoU 0.77 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C012,img_002.jpg,iou_thap,101|102,car,car,"[559,250,145,117]","[539,247,191,122]",0.72,IoU 0.72 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C013,img_002.jpg,sai_thuoc_tinh,101|102,car,car,"[820,173,73,90]","[818,173,75,94]",0.92,occluded_level: 101=0 vs 102=1
+C014,img_002.jpg,sai_thuoc_tinh,101|102,car,car,"[720,149,106,99]","[717,150,113,100]",0.92,occluded_level: 101=0 vs 102=1
+C015,img_002.jpg,sai_thuoc_tinh,101|102,car,car,"[726,273,91,119]","[725,279,96,113]",0.90,occluded_level: 101=0 vs 102=1
+C016,img_002.jpg,sai_thuoc_tinh,101|102,car,car,"[492,255,103,127]","[476,254,124,137]",0.77,occluded_level: 101=0 vs 102=1
+C017,img_002.jpg,sai_thuoc_tinh,101|102,car,car,"[559,250,145,117]","[539,247,191,122]",0.72,occluded_level: 101=0 vs 102=1
+C018,img_003.jpg,bo_sot_thua,101|102,person,,"[97,55,20,55]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C019,img_003.jpg,bo_sot_thua,101|102,person,,"[113,66,17,42]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C020,img_003.jpg,bo_sot_thua,101|102,car,,"[277,38,80,49]",,,Chỉ 101 vẽ car này. 102 bỏ sót hoặc 101 vẽ thừa.
+C021,img_003.jpg,bo_sot_thua,101|102,car,,"[257,40,24,40]",,,Chỉ 101 vẽ car này. 102 bỏ sót hoặc 101 vẽ thừa.
+C022,img_003.jpg,bo_sot_thua,101|102,person,,"[184,40,39,69]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C023,img_003.jpg,bo_sot_thua,101|102,motorcycle,,"[477,183,96,139]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C024,img_003.jpg,bo_sot_thua,101|102,motorcycle,,"[88,108,79,114]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C025,img_003.jpg,bo_sot_thua,101|102,person,,"[243,37,24,41]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C026,img_003.jpg,bo_sot_thua,101|102,person,,"[390,23,15,25]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C027,img_003.jpg,bo_sot_thua,101|102,person,,"[0,56,78,184]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C028,img_003.jpg,bo_sot_thua,101|102,motorcycle,,"[237,75,33,49]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C029,img_003.jpg,bo_sot_thua,101|102,person,,"[473,9,20,31]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C030,img_003.jpg,bo_sot_thua,101|102,motorcycle,,"[919,19,41,95]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C031,img_003.jpg,bo_sot_thua,101|102,person,,"[739,0,54,43]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C032,img_003.jpg,bo_sot_thua,101|102,motorcycle,,"[27,115,76,133]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C033,img_003.jpg,bo_sot_thua,101|102,person,,"[407,28,19,23]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C034,img_003.jpg,bo_sot_thua,101|102,person,,"[340,33,17,20]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C035,img_003.jpg,bo_sot_thua,101|102,motorcycle,,"[451,53,42,52]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C036,img_003.jpg,bo_sot_thua,101|102,person,,"[872,0,34,37]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C037,img_003.jpg,bo_sot_thua,101|102,car,,"[165,38,31,21]",,,Chỉ 101 vẽ car này. 102 bỏ sót hoặc 101 vẽ thừa.
+C038,img_003.jpg,bo_sot_thua,101|102,person,,"[440,13,20,37]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C039,img_003.jpg,bo_sot_thua,101|102,person,,"[227,44,20,41]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C040,img_003.jpg,bo_sot_thua,101|102,motorcycle,,"[217,60,20,75]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C041,img_003.jpg,bo_sot_thua,101|102,motorcycle,,"[844,13,80,94]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C042,img_003.jpg,bo_sot_thua,101|102,person,,"[34,55,59,77]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C043,img_003.jpg,bo_sot_thua,101|102,motorcycle,,"[808,15,79,90]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C044,img_003.jpg,bo_sot_thua,101|102,person,,"[767,3,10,19]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C045,img_003.jpg,bo_sot_thua,101|102,motorcycle,,"[347,48,37,27]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C046,img_003.jpg,bo_sot_thua,101|102,motorcycle,,"[396,50,27,28]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C047,img_003.jpg,bo_sot_thua,101|102,person,,"[57,15,23,55]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C048,img_003.jpg,bo_sot_thua,101|102,person,,"[26,72,81,146]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C049,img_003.jpg,bo_sot_thua,101|102,person,,"[0,70,27,83]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C050,img_003.jpg,bo_sot_thua,101|102,,car,,"[445,13,14,77]",,Chỉ 102 vẽ car này. 101 bỏ sót hoặc 102 vẽ thừa.
+C051,img_003.jpg,iou_thap,101|102,person,car,"[493,0,213,353]","[488,0,223,405]",0.83,IoU 0.83 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C052,img_003.jpg,iou_thap,101|102,person,car,"[467,44,86,173]","[466,33,93,172]",0.81,IoU 0.81 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C053,img_003.jpg,iou_thap,101|102,motorcycle,motorcycle,"[741,39,79,133]","[735,34,94,142]",0.79,IoU 0.79 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C054,img_003.jpg,iou_thap,101|102,person,car,"[237,63,125,129]","[233,60,140,147]",0.78,IoU 0.78 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C055,img_003.jpg,iou_thap,101|102,person,car,"[450,15,37,82]","[455,14,40,82]",0.72,IoU 0.72 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C056,img_003.jpg,iou_thap,101|102,motorcycle,motorcycle,"[253,123,164,216]","[241,118,191,302]",0.61,IoU 0.61 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C057,img_003.jpg,sai_lop,101|102,person,car,"[100,0,211,575]","[100,-0,226,588]",0.91,"101 gán person, 102 gán car cho cùng một vật"
+C058,img_003.jpg,sai_lop,101|102,person,car,"[683,8,103,234]","[677,5,113,245]",0.87,"101 gán person, 102 gán car cho cùng một vật"
+C059,img_003.jpg,sai_lop,101|102,person,car,"[493,0,213,353]","[488,0,223,405]",0.83,"101 gán person, 102 gán car cho cùng một vật"
+C060,img_003.jpg,sai_lop,101|102,person,car,"[467,44,86,173]","[466,33,93,172]",0.81,"101 gán person, 102 gán car cho cùng một vật"
+C061,img_003.jpg,sai_lop,101|102,person,car,"[237,63,125,129]","[233,60,140,147]",0.78,"101 gán person, 102 gán car cho cùng một vật"
+C062,img_003.jpg,sai_lop,101|102,person,car,"[450,15,37,82]","[455,14,40,82]",0.72,"101 gán person, 102 gán car cho cùng một vật"
+C063,img_004.jpg,bo_sot_thua,101|102,person,,"[578,155,84,195]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C064,img_004.jpg,bo_sot_thua,101|102,person,,"[180,127,154,302]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C065,img_004.jpg,bo_sot_thua,101|102,,three_wheeler,,"[66,79,396,510]",,Chỉ 102 vẽ three_wheeler này. 101 bỏ sót hoặc 102 vẽ thừa.
+C066,img_004.jpg,bo_sot_thua,101|102,,three_wheeler,,"[436,96,432,358]",,Chỉ 102 vẽ three_wheeler này. 101 bỏ sót hoặc 102 vẽ thừa.
+C067,img_005.jpg,bo_sot_thua,101|102,person,,"[937,69,20,31]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C068,img_005.jpg,bo_sot_thua,101|102,car,,"[0,75,80,94]",,,Chỉ 101 vẽ car này. 102 bỏ sót hoặc 101 vẽ thừa.
+C069,img_005.jpg,bo_sot_thua,101|102,car,,"[0,138,93,150]",,,Chỉ 101 vẽ car này. 102 bỏ sót hoặc 101 vẽ thừa.
+C070,img_005.jpg,bo_sot_thua,101|102,person,,"[0,333,45,238]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C071,img_005.jpg,bo_sot_thua,101|102,person,,"[900,102,42,69]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C072,img_005.jpg,bo_sot_thua,101|102,person,,"[889,69,21,38]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C073,img_005.jpg,bo_sot_thua,101|102,motorcycle,,"[774,324,186,316]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C074,img_005.jpg,bo_sot_thua,101|102,person,,"[424,32,453,606]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C075,img_005.jpg,bo_sot_thua,101|102,person,,"[230,98,26,20]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C076,img_005.jpg,bo_sot_thua,101|102,motorcycle,,"[0,298,460,342]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C077,img_005.jpg,bo_sot_thua,101|102,person,,"[622,45,231,386]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C078,img_005.jpg,bo_sot_thua,101|102,person,,"[934,104,26,95]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C079,img_005.jpg,bo_sot_thua,101|102,person,,"[438,93,75,189]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C080,img_005.jpg,bo_sot_thua,101|102,car,,"[190,116,110,35]",,,Chỉ 101 vẽ car này. 102 bỏ sót hoặc 101 vẽ thừa.
+C081,img_005.jpg,bo_sot_thua,101|102,motorcycle,,"[756,320,144,159]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C082,img_005.jpg,bo_sot_thua,101|102,person,,"[320,117,164,156]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C083,img_005.jpg,bo_sot_thua,101|102,person,,"[193,96,24,20]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C084,img_005.jpg,bo_sot_thua,101|102,,van,,"[47,22,913,344]",,Chỉ 102 vẽ van này. 101 bỏ sót hoặc 102 vẽ thừa.
+C085,img_005.jpg,bo_sot_thua,101|102,,car,,"[0,100,326,191]",,Chỉ 102 vẽ car này. 101 bỏ sót hoặc 102 vẽ thừa.
+C086,img_005.jpg,iou_thap,101|102,person,person,"[427,33,189,605]","[409,25,249,615]",0.75,IoU 0.75 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C087,img_005.jpg,iou_thap,101|102,person,person,"[308,117,251,522]","[313,93,279,443]",0.68,IoU 0.68 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C088,img_005.jpg,iou_thap,101|102,motorcycle,motorcycle,"[3,330,128,277]","[0,295,213,299]",0.52,IoU 0.52 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C089,img_006.jpg,bo_sot_thua,101|102,person,,"[457,167,22,27]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C090,img_006.jpg,bo_sot_thua,101|102,motorcycle,,"[251,193,19,28]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C091,img_006.jpg,bo_sot_thua,101|102,person,,"[563,169,24,41]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C092,img_006.jpg,bo_sot_thua,101|102,bus,,"[96,123,168,63]",,,Chỉ 101 vẽ bus này. 102 bỏ sót hoặc 101 vẽ thừa.
+C093,img_006.jpg,bo_sot_thua,101|102,person,,"[783,133,30,13]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C094,img_006.jpg,bo_sot_thua,101|102,motorcycle,,"[434,210,79,89]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C095,img_006.jpg,bo_sot_thua,101|102,person,,"[897,160,53,67]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C096,img_006.jpg,bo_sot_thua,101|102,motorcycle,,"[0,240,16,14]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C097,img_006.jpg,bo_sot_thua,101|102,bicycle,,"[293,197,20,35]",,,Chỉ 101 vẽ bicycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C098,img_006.jpg,bo_sot_thua,101|102,bicycle,,"[860,233,80,164]",,,Chỉ 101 vẽ bicycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C099,img_006.jpg,bo_sot_thua,101|102,person,,"[497,165,23,67]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C100,img_006.jpg,bo_sot_thua,101|102,bicycle,,"[726,233,51,131]",,,Chỉ 101 vẽ bicycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C101,img_006.jpg,bo_sot_thua,101|102,person,,"[581,143,45,176]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C102,img_006.jpg,bo_sot_thua,101|102,person,,"[473,165,24,36]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C103,img_006.jpg,bo_sot_thua,101|102,car,,"[560,156,73,33]",,,Chỉ 101 vẽ car này. 102 bỏ sót hoặc 101 vẽ thừa.
+C104,img_006.jpg,bo_sot_thua,101|102,motorcycle,,"[318,186,22,51]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C105,img_006.jpg,bo_sot_thua,101|102,person,,"[294,177,23,44]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C106,img_006.jpg,bo_sot_thua,101|102,person,,"[733,167,30,47]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C107,img_006.jpg,bo_sot_thua,101|102,bicycle,,"[694,262,50,125]",,,Chỉ 101 vẽ bicycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C108,img_006.jpg,bo_sot_thua,101|102,person,,"[863,152,57,80]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C109,img_006.jpg,bo_sot_thua,101|102,person,,"[247,174,20,23]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C110,img_006.jpg,bo_sot_thua,101|102,person,,"[682,139,65,106]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C111,img_006.jpg,bo_sot_thua,101|102,motorcycle,,"[311,235,36,94]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C112,img_006.jpg,iou_thap,101|102,person,person,"[570,124,150,320]","[560,120,168,340]",0.84,IoU 0.84 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C113,img_006.jpg,iou_thap,101|102,person,person,"[514,141,69,152]","[511,137,76,168]",0.82,IoU 0.82 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C114,img_006.jpg,iou_thap,101|102,motorcycle,motorcycle,"[91,185,196,302]","[81,207,220,284]",0.82,IoU 0.82 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C115,img_006.jpg,iou_thap,101|102,bicycle,bicycle,"[751,322,135,217]","[747,319,117,221]",0.81,IoU 0.81 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C116,img_006.jpg,iou_thap,101|102,motorcycle,motorcycle,"[320,220,143,262]","[310,217,171,275]",0.80,IoU 0.80 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C117,img_006.jpg,iou_thap,101|102,person,person,"[423,143,74,159]","[424,141,83,148]",0.79,IoU 0.79 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C118,img_006.jpg,iou_thap,101|102,person,person,"[912,148,48,263]","[904,138,56,286]",0.79,IoU 0.79 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C119,img_006.jpg,iou_thap,101|102,bicycle,bicycle,"[520,236,50,107]","[514,235,69,112]",0.69,IoU 0.69 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C120,img_006.jpg,iou_thap,101|102,motorcycle,bicycle,"[590,201,150,271]","[605,274,146,202]",0.61,IoU 0.61 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C121,img_006.jpg,iou_thap,101|102,person,person,"[170,96,110,192]","[169,87,120,301]",0.59,IoU 0.59 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C122,img_006.jpg,sai_lop,101|102,motorcycle,bicycle,"[590,201,150,271]","[605,274,146,202]",0.61,"101 gán motorcycle, 102 gán bicycle cho cùng một vật"
+C123,img_006.jpg,sai_thuoc_tinh,101|102,person,person,"[423,143,74,159]","[424,141,83,148]",0.79,occluded_level: 101=0 vs 102=2
+C124,img_006.jpg,sai_thuoc_tinh,101|102,person,person,"[912,148,48,263]","[904,138,56,286]",0.79,occluded_level: 101=0 vs 102=2; truncated: 101=no vs 102=yes
+C125,img_006.jpg,sai_thuoc_tinh,101|102,person,person,"[170,96,110,192]","[169,87,120,301]",0.59,occluded_level: 101=0 vs 102=2
+C126,img_007.jpg,bo_sot_thua,101|102,person,,"[633,300,31,87]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C127,img_008.jpg,bo_sot_thua,101|102,person,,"[57,193,56,63]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C128,img_008.jpg,bo_sot_thua,101|102,person,,"[820,200,20,49]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C129,img_008.jpg,bo_sot_thua,101|102,person,,"[804,213,19,29]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C130,img_008.jpg,bo_sot_thua,101|102,motorcycle,,"[554,280,406,360]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C131,img_008.jpg,bo_sot_thua,101|102,person,,"[580,204,22,54]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C132,img_008.jpg,bo_sot_thua,101|102,motorcycle,,"[0,564,176,76]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C133,img_008.jpg,bo_sot_thua,101|102,motorcycle,,"[860,237,73,47]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C134,img_008.jpg,bo_sot_thua,101|102,motorcycle,,"[937,246,23,52]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C135,img_008.jpg,bo_sot_thua,101|102,person,,"[857,182,20,48]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C136,img_008.jpg,bo_sot_thua,101|102,person,,"[218,196,22,39]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C137,img_008.jpg,bo_sot_thua,101|102,motorcycle,,"[161,224,55,74]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C138,img_008.jpg,bo_sot_thua,101|102,person,,"[370,180,33,45]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C139,img_008.jpg,bo_sot_thua,101|102,motorcycle,,"[837,222,33,47]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C140,img_008.jpg,bo_sot_thua,101|102,motorcycle,,"[0,209,151,203]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C141,img_008.jpg,bo_sot_thua,101|102,motorcycle,,"[448,254,138,83]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C142,img_008.jpg,bo_sot_thua,101|102,person,,"[353,184,14,47]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C143,img_008.jpg,bo_sot_thua,101|102,car,,"[723,219,27,33]",,,Chỉ 101 vẽ car này. 102 bỏ sót hoặc 101 vẽ thừa.
+C144,img_008.jpg,bo_sot_thua,101|102,person,,"[949,209,11,38]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C145,img_008.jpg,iou_thap,101|102,person,person,"[498,191,45,60]","[494,190,50,65]",0.83,IoU 0.83 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C146,img_008.jpg,iou_thap,101|102,motorcycle,motorcycle,"[310,268,222,223]","[335,273,205,222]",0.83,IoU 0.83 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C147,img_008.jpg,iou_thap,101|102,person,person,"[417,191,30,51]","[417,190,35,55]",0.81,IoU 0.81 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C148,img_008.jpg,iou_thap,101|102,person,person,"[374,180,46,65]","[370,179,55,52]",0.67,IoU 0.67 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C149,img_008.jpg,iou_thap,101|102,motorcycle,motorcycle,"[312,362,147,198]","[310,267,146,292]",0.66,IoU 0.66 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C150,img_008.jpg,iou_thap,101|102,motorcycle,motorcycle,"[361,263,193,181]","[396,306,161,138]",0.62,IoU 0.62 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C151,img_008.jpg,sai_thuoc_tinh,101|102,motorcycle,motorcycle,"[310,268,222,223]","[335,273,205,222]",0.83,occluded_level: 101=0 vs 102=2
+C152,img_008.jpg,sai_thuoc_tinh,101|102,motorcycle,motorcycle,"[312,362,147,198]","[310,267,146,292]",0.66,occluded_level: 101=0 vs 102=2
+C153,img_008.jpg,sai_thuoc_tinh,101|102,motorcycle,motorcycle,"[361,263,193,181]","[396,306,161,138]",0.62,occluded_level: 101=0 vs 102=3
+C154,img_009.jpg,bo_sot_thua,101|102,person,,"[307,206,13,19]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C155,img_009.jpg,bo_sot_thua,101|102,person,,"[257,216,13,25]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C156,img_009.jpg,bo_sot_thua,101|102,motorcycle,,"[916,431,44,65]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C157,img_009.jpg,bo_sot_thua,101|102,person,,"[213,305,17,39]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C158,img_009.jpg,bo_sot_thua,101|102,motorcycle,,"[774,429,23,42]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C159,img_009.jpg,bo_sot_thua,101|102,motorcycle,,"[690,433,23,34]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C160,img_009.jpg,bo_sot_thua,101|102,person,,"[720,405,13,36]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C161,img_009.jpg,bo_sot_thua,101|102,bicycle,,"[797,426,20,39]",,,Chỉ 101 vẽ bicycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C162,img_009.jpg,bo_sot_thua,101|102,,person,,"[561,395,21,27]",,Chỉ 102 vẽ person này. 101 bỏ sót hoặc 102 vẽ thừa.
+C163,img_009.jpg,bo_sot_thua,101|102,,person,,"[597,399,28,22]",,Chỉ 102 vẽ person này. 101 bỏ sót hoặc 102 vẽ thừa.
+C164,img_009.jpg,bo_sot_thua,101|102,,person,,"[375,399,16,26]",,Chỉ 102 vẽ person này. 101 bỏ sót hoặc 102 vẽ thừa.
+C165,img_009.jpg,iou_thap,101|102,motorcycle,motorcycle,"[813,463,147,76]","[811,432,149,108]",0.69,IoU 0.69 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C166,img_009.jpg,iou_thap,101|102,motorcycle,motorcycle,"[867,435,36,47]","[862,432,55,50]",0.61,IoU 0.61 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C167,img_009.jpg,sai_thuoc_tinh,101|102,motorcycle,motorcycle,"[813,463,147,76]","[811,432,149,108]",0.69,occluded_level: 101=0 vs 102=1; truncated: 101=no vs 102=yes
+C168,img_009.jpg,sai_thuoc_tinh,101|102,motorcycle,motorcycle,"[867,435,36,47]","[862,432,55,50]",0.61,occluded_level: 101=0 vs 102=2
+C169,img_010.jpg,bo_sot_thua,101|102,person,,"[937,109,23,58]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C170,img_010.jpg,bo_sot_thua,101|102,motorcycle,,"[573,220,113,210]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C171,img_010.jpg,iou_thap,101|102,person,person,"[120,118,230,387]","[116,118,238,307]",0.77,IoU 0.77 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C172,img_010.jpg,iou_thap,101|102,motorcycle,motorcycle,"[144,234,203,303]","[138,307,169,233]",0.59,IoU 0.59 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C173,img_010.jpg,iou_thap,101|102,person,person,"[238,85,158,427]","[127,94,275,422]",0.56,IoU 0.56 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C174,img_010.jpg,sai_thuoc_tinh,101|102,person,person,"[238,85,158,427]","[127,94,275,422]",0.56,occluded_level: 101=0 vs 102=1
+C175,img_011.jpg,bat_dong_ignore,101|102,,,,"[378,330,55,47]",,Vùng ignore không ghép được với vùng của người kia.
+C176,img_011.jpg,bat_dong_ignore,101|102,,,,"[474,331,55,30]",,Vùng ignore không ghép được với vùng của người kia.
+C177,img_011.jpg,bat_dong_ignore,101|102,person,,"[420,331,13,42]",,,Chỉ vùng ignore của 102 phủ box của 101.
+C178,img_011.jpg,bat_dong_ignore,101|102,person,,"[407,333,16,36]",,,Chỉ vùng ignore của 102 phủ box của 101.
+C179,img_011.jpg,bat_dong_ignore,101|102,person,,"[377,335,13,40]",,,Chỉ vùng ignore của 102 phủ box của 101.
+C180,img_011.jpg,bo_sot_thua,101|102,motorcycle,,"[0,473,147,167]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C181,img_011.jpg,bo_sot_thua,101|102,person,,"[447,333,20,47]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C182,img_011.jpg,bo_sot_thua,101|102,motorcycle,,"[279,371,331,269]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C183,img_011.jpg,bo_sot_thua,101|102,person,,"[83,337,20,59]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C184,img_011.jpg,bo_sot_thua,101|102,person,,"[281,338,16,37]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C185,img_011.jpg,bo_sot_thua,101|102,person,,"[323,336,17,45]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C186,img_011.jpg,bo_sot_thua,101|102,person,,"[337,336,10,40]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C187,img_011.jpg,bo_sot_thua,101|102,motorcycle,,"[9,353,21,27]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C188,img_011.jpg,bo_sot_thua,101|102,person,,"[537,21,423,619]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C189,img_011.jpg,bo_sot_thua,101|102,motorcycle,,"[616,384,154,160]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C190,img_011.jpg,bo_sot_thua,101|102,person,,"[120,340,16,27]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C191,img_011.jpg,bo_sot_thua,101|102,person,,"[307,338,13,49]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C192,img_011.jpg,bo_sot_thua,101|102,person,,"[210,340,17,60]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C193,img_011.jpg,iou_thap,101|102,person,person,"[197,340,20,64]","[196,339,23,66]",0.84,IoU 0.84 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C194,img_011.jpg,iou_thap,101|102,person,person,"[267,338,16,53]","[266,340,15,53]",0.83,IoU 0.83 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C195,img_011.jpg,iou_thap,101|102,person,person,"[360,340,20,62]","[357,342,24,59]",0.79,IoU 0.79 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C196,img_011.jpg,iou_thap,101|102,person,person,"[170,342,20,62]","[174,341,18,64]",0.73,IoU 0.73 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C197,img_011.jpg,iou_thap,101|102,person,person,"[30,341,17,63]","[32,340,19,64]",0.73,IoU 0.73 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C198,img_011.jpg,iou_thap,101|102,person,person,"[50,365,52,117]","[48,363,69,123]",0.72,IoU 0.72 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C199,img_011.jpg,sai_lop,101|102,car,van,"[517,324,109,85]","[516,324,116,92]",0.86,"101 gán car, 102 gán van cho cùng một vật"
+C200,img_011.jpg,sai_thuoc_tinh,101|102,car,van,"[517,324,109,85]","[516,324,116,92]",0.86,occluded_level: 101=0 vs 102=2
+C201,img_011.jpg,sai_thuoc_tinh,101|102,person,person,"[30,341,17,63]","[32,340,19,64]",0.73,occluded_level: 101=0 vs 102=2
+C202,img_012.jpg,sai_thuoc_tinh,101|102,truck,truck,"[291,252,669,388]","[287,241,673,399]",0.97,truncated: 101=no vs 102=yes
+C203,img_013.jpg,bat_dong_ignore,101|102,,,,"[210,413,118,29]",,Vùng ignore không ghép được với vùng của người kia.
+C204,img_013.jpg,bat_dong_ignore,101|102,car,,"[280,418,47,24]",,,Chỉ vùng ignore của 102 phủ box của 101.
+C205,img_013.jpg,bat_dong_ignore,101|102,car,,"[240,420,40,22]",,,Chỉ vùng ignore của 102 phủ box của 101.
+C206,img_013.jpg,bat_dong_ignore,101|102,motorcycle,,"[210,429,13,13]",,,Chỉ vùng ignore của 102 phủ box của 101.
+C207,img_013.jpg,bo_sot_thua,101|102,person,,"[510,402,20,16]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C208,img_013.jpg,bo_sot_thua,101|102,person,,"[283,437,18,34]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C209,img_013.jpg,bo_sot_thua,101|102,car,,"[140,420,27,18]",,,Chỉ 101 vẽ car này. 102 bỏ sót hoặc 101 vẽ thừa.
+C210,img_014.jpg,bo_sot_thua,101|102,motorcycle,,"[822,325,138,273]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C211,img_014.jpg,bo_sot_thua,101|102,motorcycle,,"[449,332,236,192]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C212,img_014.jpg,bo_sot_thua,101|102,motorcycle,,"[0,315,319,379]",,,Chỉ 101 vẽ motorcycle này. 102 bỏ sót hoặc 101 vẽ thừa.
+C213,img_014.jpg,iou_thap,101|102,person,person,"[465,178,174,304]","[474,180,182,286]",0.81,IoU 0.81 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C214,img_015.jpg,bo_sot_thua,101|102,car,,"[724,107,126,91]",,,Chỉ 101 vẽ car này. 102 bỏ sót hoặc 101 vẽ thừa.
+C215,img_015.jpg,iou_thap,101|102,car,car,"[450,122,150,80]","[415,121,188,82]",0.78,IoU 0.78 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C216,img_015.jpg,iou_thap,101|102,car,truck,"[0,117,57,64]","[-0,87,56,94]",0.67,IoU 0.67 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C217,img_015.jpg,sai_lop,101|102,car,truck,"[0,117,57,64]","[-0,87,56,94]",0.67,"101 gán car, 102 gán truck cho cùng một vật"
+C218,img_015.jpg,sai_thuoc_tinh,101|102,car,truck,"[0,117,57,64]","[-0,87,56,94]",0.67,truncated: 101=no vs 102=yes
+C219,img_016.jpg,bo_sot_thua,101|102,person,,"[330,295,30,20]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C220,img_016.jpg,bo_sot_thua,101|102,person,,"[803,402,123,159]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C221,img_016.jpg,bo_sot_thua,101|102,person,,"[3,373,129,112]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C222,img_016.jpg,bo_sot_thua,101|102,person,,"[0,658,80,62]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C223,img_016.jpg,bo_sot_thua,101|102,person,,"[411,335,27,50]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C224,img_016.jpg,bo_sot_thua,101|102,,van,,"[539,271,421,225]",,Chỉ 102 vẽ van này. 101 bỏ sót hoặc 102 vẽ thừa.
+C225,img_016.jpg,bo_sot_thua,101|102,,car,,"[0,278,324,252]",,Chỉ 102 vẽ car này. 101 bỏ sót hoặc 102 vẽ thừa.
+C226,img_016.jpg,iou_thap,101|102,motorcycle,motorcycle,"[324,388,265,181]","[320,409,280,165]",0.82,IoU 0.82 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C227,img_016.jpg,sai_lop,101|102,motorcycle,three_wheeler,"[0,310,197,349]","[0,307,200,348]",0.97,"101 gán motorcycle, 102 gán three_wheeler cho cùng một vật"
+C228,img_016.jpg,sai_lop,101|102,motorcycle,three_wheeler,"[650,325,310,349]","[648,319,312,362]",0.96,"101 gán motorcycle, 102 gán three_wheeler cho cùng một vật"
+C229,img_016.jpg,sai_thuoc_tinh,101|102,motorcycle,three_wheeler,"[0,310,197,349]","[0,307,200,348]",0.97,occluded_level: 101=0 vs 102=1; truncated: 101=no vs 102=yes
+C230,img_016.jpg,sai_thuoc_tinh,101|102,motorcycle,three_wheeler,"[650,325,310,349]","[648,319,312,362]",0.96,truncated: 101=no vs 102=yes
+C231,img_016.jpg,sai_thuoc_tinh,101|102,person,person,"[777,443,183,277]","[770,445,190,275]",0.96,truncated: 101=no vs 102=yes
+C232,img_017.jpg,bo_sot_thua,101|102,person,,"[244,258,180,483]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C233,img_018.jpg,bo_sot_thua,101|102,person,,"[213,208,104,104]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C234,img_018.jpg,bo_sot_thua,101|102,truck,,"[144,534,44,68]",,,Chỉ 101 vẽ truck này. 102 bỏ sót hoặc 101 vẽ thừa.
+C235,img_018.jpg,bo_sot_thua,101|102,car,,"[923,557,37,27]",,,Chỉ 101 vẽ car này. 102 bỏ sót hoặc 101 vẽ thừa.
+C236,img_018.jpg,bo_sot_thua,101|102,truck,,"[700,518,197,45]",,,Chỉ 101 vẽ truck này. 102 bỏ sót hoặc 101 vẽ thừa.
+C237,img_018.jpg,iou_thap,101|102,car,truck,"[167,496,203,167]","[154,492,220,191]",0.81,IoU 0.81 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C238,img_018.jpg,sai_lop,101|102,car,truck,"[167,496,203,167]","[154,492,220,191]",0.81,"101 gán car, 102 gán truck cho cùng một vật"
+C239,img_018.jpg,sai_thuoc_tinh,101|102,car,car,"[0,531,117,120]","[0,530,118,136]",0.88,truncated: 101=no vs 102=yes
+C240,img_019.jpg,bat_dong_ignore,101|102,,,,"[183,65,260,286]",,Vùng ignore không ghép được với vùng của người kia.
+C241,img_019.jpg,bat_dong_ignore,101|102,person,,"[396,130,48,151]",,,Chỉ vùng ignore của 102 phủ box của 101.
+C242,img_019.jpg,bat_dong_ignore,101|102,person,,"[373,83,30,51]",,,Chỉ vùng ignore của 102 phủ box của 101.
+C243,img_019.jpg,bat_dong_ignore,101|102,person,,"[273,110,30,21]",,,Chỉ vùng ignore của 102 phủ box của 101.
+C244,img_019.jpg,bat_dong_ignore,101|102,person,,"[222,103,91,234]",,,Chỉ vùng ignore của 102 phủ box của 101.
+C245,img_019.jpg,bat_dong_ignore,101|102,person,,"[291,112,72,212]",,,Chỉ vùng ignore của 102 phủ box của 101.
+C246,img_019.jpg,bat_dong_ignore,101|102,person,,"[340,78,37,54]",,,Chỉ vùng ignore của 102 phủ box của 101.
+C247,img_019.jpg,bat_dong_ignore,101|102,person,,"[184,48,49,61]",,,Chỉ vùng ignore của 102 phủ box của 101.
+C248,img_019.jpg,bat_dong_ignore,101|102,person,,"[358,135,49,151]",,,Chỉ vùng ignore của 102 phủ box của 101.
+C249,img_019.jpg,bat_dong_ignore,101|102,person,,"[333,123,50,182]",,,Chỉ vùng ignore của 102 phủ box của 101.
+C250,img_019.jpg,bat_dong_ignore,101|102,person,,"[220,66,108,49]",,,Chỉ vùng ignore của 102 phủ box của 101.
+C251,img_019.jpg,bat_dong_ignore,101|102,person,,"[317,83,99,39]",,,Chỉ vùng ignore của 102 phủ box của 101.
+C252,img_019.jpg,bo_sot_thua,101|102,person,,"[634,116,49,76]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C253,img_019.jpg,bo_sot_thua,101|102,person,,"[476,116,62,154]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C254,img_019.jpg,bo_sot_thua,101|102,person,,"[897,129,26,27]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C255,img_019.jpg,bo_sot_thua,101|102,person,,"[787,76,32,54]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C256,img_019.jpg,bo_sot_thua,101|102,person,,"[943,377,17,68]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C257,img_019.jpg,bo_sot_thua,101|102,person,,"[470,80,47,70]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C258,img_019.jpg,bo_sot_thua,101|102,person,,"[487,89,109,54]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C259,img_019.jpg,bo_sot_thua,101|102,person,,"[819,440,141,201]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C260,img_019.jpg,bo_sot_thua,101|102,person,,"[629,565,313,78]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C261,img_019.jpg,bo_sot_thua,101|102,person,,"[0,47,37,129]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C262,img_019.jpg,bo_sot_thua,101|102,person,,"[156,57,31,79]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C263,img_019.jpg,bo_sot_thua,101|102,person,,"[753,134,47,60]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C264,img_019.jpg,bo_sot_thua,101|102,person,,"[136,0,37,67]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C265,img_019.jpg,bo_sot_thua,101|102,person,,"[617,154,26,58]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C266,img_019.jpg,bo_sot_thua,101|102,person,,"[694,94,26,44]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C267,img_019.jpg,bo_sot_thua,101|102,person,,"[0,129,27,112]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C268,img_019.jpg,bo_sot_thua,101|102,person,,"[925,154,35,136]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C269,img_019.jpg,bo_sot_thua,101|102,person,,"[423,72,49,57]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C270,img_019.jpg,bo_sot_thua,101|102,person,,"[514,85,36,73]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C271,img_019.jpg,bo_sot_thua,101|102,person,,"[84,4,59,94]",,,Chỉ 101 vẽ person này. 102 bỏ sót hoặc 101 vẽ thừa.
+C272,img_019.jpg,bo_sot_thua,101|102,,person,,"[435,160,45,68]",,Chỉ 102 vẽ person này. 101 bỏ sót hoặc 102 vẽ thừa.
+C273,img_019.jpg,bo_sot_thua,101|102,,person,,"[39,108,100,78]",,Chỉ 102 vẽ person này. 101 bỏ sót hoặc 102 vẽ thừa.
+C274,img_019.jpg,bo_sot_thua,101|102,,person,,"[29,166,71,55]",,Chỉ 102 vẽ person này. 101 bỏ sót hoặc 102 vẽ thừa.
+C275,img_019.jpg,iou_thap,101|102,person,person,"[453,199,57,89]","[452,194,63,95]",0.85,IoU 0.85 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C276,img_019.jpg,iou_thap,101|102,person,person,"[421,121,55,62]","[421,119,58,54]",0.79,IoU 0.79 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C277,img_019.jpg,iou_thap,101|102,person,person,"[131,120,99,270]","[139,119,98,242]",0.77,IoU 0.77 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C278,img_019.jpg,iou_thap,101|102,person,person,"[120,67,43,88]","[124,65,45,87]",0.77,IoU 0.77 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C279,img_019.jpg,iou_thap,101|102,person,person,"[530,238,60,67]","[518,238,80,81]",0.62,IoU 0.62 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C280,img_019.jpg,iou_thap,101|102,person,person,"[57,146,126,240]","[79,149,84,212]",0.58,IoU 0.58 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C281,img_019.jpg,sai_thuoc_tinh,101|102,person,person,"[453,199,57,89]","[452,194,63,95]",0.85,occluded_level: 101=0 vs 102=2
+C282,img_019.jpg,sai_thuoc_tinh,101|102,person,person,"[421,121,55,62]","[421,119,58,54]",0.79,occluded_level: 101=0 vs 102=2
+C283,img_019.jpg,sai_thuoc_tinh,101|102,person,person,"[530,238,60,67]","[518,238,80,81]",0.62,occluded_level: 101=0 vs 102=2
+C284,img_020.jpg,bo_sot_thua,101|102,car,,"[349,118,371,497]",,,Chỉ 101 vẽ car này. 102 bỏ sót hoặc 101 vẽ thừa.
+C285,img_020.jpg,bo_sot_thua,101|102,car,,"[0,0,768,1024]",,,Chỉ 101 vẽ car này. 102 bỏ sót hoặc 101 vẽ thừa.
+C286,img_020.jpg,sai_thuoc_tinh,101|102,car,car,"[205,407,55,52]","[206,406,55,50]",0.92,occluded_level: 101=0 vs 102=1
+C287,img_021.jpg,bo_sot_thua,101|103,motorcycle,,"[672,308,31,30]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C288,img_021.jpg,bo_sot_thua,101|103,person,,"[387,266,26,45]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C289,img_021.jpg,bo_sot_thua,101|103,motorcycle,,"[750,275,27,47]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C290,img_021.jpg,bo_sot_thua,101|103,person,,"[730,246,26,31]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C291,img_021.jpg,bo_sot_thua,101|103,car,,"[640,205,30,12]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C292,img_021.jpg,bo_sot_thua,101|103,person,,"[160,324,73,125]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C293,img_021.jpg,bo_sot_thua,101|103,car,,"[0,241,160,102]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C294,img_021.jpg,bo_sot_thua,101|103,person,,"[83,250,70,65]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C295,img_021.jpg,bo_sot_thua,101|103,person,,"[177,259,30,67]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C296,img_021.jpg,bo_sot_thua,101|103,motorcycle,,"[0,430,73,126]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C297,img_021.jpg,bo_sot_thua,101|103,motorcycle,,"[0,353,137,107]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C298,img_021.jpg,bo_sot_thua,101|103,person,,"[227,252,33,58]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C299,img_021.jpg,bo_sot_thua,101|103,person,,"[645,237,28,60]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C300,img_021.jpg,bo_sot_thua,101|103,person,,"[556,234,27,45]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C301,img_021.jpg,bo_sot_thua,101|103,car,,"[417,219,119,28]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C302,img_021.jpg,bo_sot_thua,101|103,motorcycle,,"[0,594,37,49]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C303,img_021.jpg,bo_sot_thua,101|103,person,,"[478,234,25,43]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C304,img_021.jpg,bo_sot_thua,101|103,person,,"[425,261,42,60]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C305,img_021.jpg,bo_sot_thua,101|103,person,,"[457,237,36,44]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C306,img_021.jpg,bo_sot_thua,101|103,person,,"[373,239,27,40]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C307,img_021.jpg,bo_sot_thua,101|103,person,,"[700,230,30,49]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C308,img_021.jpg,bo_sot_thua,101|103,person,,"[323,230,20,48]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C309,img_021.jpg,bo_sot_thua,101|103,person,,"[395,226,22,38]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C310,img_021.jpg,bo_sot_thua,101|103,person,,"[493,232,27,33]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C311,img_021.jpg,bo_sot_thua,101|103,motorcycle,,"[547,277,30,33]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C312,img_021.jpg,bo_sot_thua,101|103,person,,"[433,228,21,33]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C313,img_021.jpg,bo_sot_thua,101|103,person,,"[577,230,26,32]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C314,img_021.jpg,bo_sot_thua,101|103,person,,"[620,239,27,40]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C315,img_021.jpg,bo_sot_thua,101|103,motorcycle,,"[47,480,96,155]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C316,img_021.jpg,bo_sot_thua,101|103,person,,"[406,246,27,26]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C317,img_021.jpg,bo_sot_thua,101|103,car,,"[610,212,35,18]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C318,img_021.jpg,bo_sot_thua,101|103,motorcycle,,"[340,360,120,101]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C319,img_021.jpg,bo_sot_thua,101|103,car,,"[420,212,27,12]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C320,img_021.jpg,bo_sot_thua,101|103,car,,"[470,212,46,9]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C321,img_021.jpg,bo_sot_thua,101|103,person,,"[870,217,27,62]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C322,img_021.jpg,bo_sot_thua,101|103,motorcycle,,"[95,320,68,85]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C323,img_021.jpg,bo_sot_thua,101|103,motorcycle,,"[450,288,42,54]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C324,img_021.jpg,bo_sot_thua,101|103,person,,"[797,221,23,63]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C325,img_021.jpg,bo_sot_thua,101|103,person,,"[694,230,19,40]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C326,img_021.jpg,bo_sot_thua,101|103,car,,"[353,217,50,18]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C327,img_021.jpg,bo_sot_thua,101|103,person,,"[503,239,24,45]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C328,img_021.jpg,bo_sot_thua,101|103,motorcycle,,"[201,362,82,51]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C329,img_021.jpg,bo_sot_thua,101|103,person,,"[777,219,23,29]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C330,img_021.jpg,bo_sot_thua,101|103,motorcycle,,"[795,265,14,27]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C331,img_021.jpg,bo_sot_thua,101|103,,person,,"[554,237,41,62]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C332,img_021.jpg,bo_sot_thua,101|103,,car,,"[0,229,213,162]",,Chỉ 103 vẽ car này. 101 bỏ sót hoặc 103 vẽ thừa.
+C333,img_021.jpg,bo_sot_thua,101|103,,car,,"[414,221,149,58]",,Chỉ 103 vẽ car này. 101 bỏ sót hoặc 103 vẽ thừa.
+C334,img_021.jpg,bo_sot_thua,101|103,,car,,"[561,210,46,20]",,Chỉ 103 vẽ car này. 101 bỏ sót hoặc 103 vẽ thừa.
+C335,img_021.jpg,bo_sot_thua,101|103,,car,,"[607,209,60,31]",,Chỉ 103 vẽ car này. 101 bỏ sót hoặc 103 vẽ thừa.
+C336,img_021.jpg,bo_sot_thua,101|103,,motorcycle,,"[750,269,45,67]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C337,img_021.jpg,bo_sot_thua,101|103,,person,,"[374,238,38,67]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C338,img_021.jpg,bo_sot_thua,101|103,,person,,"[214,249,55,90]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C339,img_021.jpg,bo_sot_thua,101|103,,person,,"[183,259,38,87]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C340,img_021.jpg,bo_sot_thua,101|103,,person,,"[151,324,127,224]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C341,img_021.jpg,bo_sot_thua,101|103,,person,,"[640,237,46,89]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C342,img_021.jpg,bo_sot_thua,101|103,,person,,"[859,230,26,63]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C343,img_021.jpg,bo_sot_thua,101|103,,person,,"[361,233,26,61]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C344,img_021.jpg,iou_thap,101|103,person,person,"[803,243,59,105]","[804,245,68,108]",0.81,IoU 0.81 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C345,img_021.jpg,iou_thap,101|103,motorcycle,motorcycle,"[537,410,180,233]","[537,408,214,227]",0.81,IoU 0.81 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C346,img_021.jpg,iou_thap,101|103,person,person,"[470,304,107,153]","[466,310,101,152]",0.81,IoU 0.81 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C347,img_021.jpg,iou_thap,101|103,person,person,"[700,259,60,136]","[697,263,69,138]",0.80,IoU 0.80 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C348,img_021.jpg,iou_thap,101|103,person,person,"[753,234,38,87]","[754,232,41,94]",0.80,IoU 0.80 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C349,img_021.jpg,iou_thap,101|103,person,person,"[0,297,70,163]","[0,289,77,184]",0.80,IoU 0.80 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C350,img_021.jpg,iou_thap,101|103,person,person,"[37,261,77,125]","[30,262,86,138]",0.80,IoU 0.80 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C351,img_021.jpg,iou_thap,101|103,person,person,"[258,329,166,253]","[230,330,202,259]",0.80,IoU 0.80 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C352,img_021.jpg,iou_thap,101|103,person,person,"[200,270,60,95]","[201,271,70,99]",0.79,IoU 0.79 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C353,img_021.jpg,iou_thap,101|103,person,person,"[337,259,26,72]","[338,259,30,78]",0.72,IoU 0.72 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C354,img_021.jpg,iou_thap,101|103,person,person,"[567,257,50,102]","[568,255,55,125]",0.71,IoU 0.71 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C355,img_021.jpg,iou_thap,101|103,person,person,"[346,266,56,104]","[348,280,53,108]",0.70,IoU 0.70 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C356,img_021.jpg,iou_thap,101|103,person,person,"[844,232,41,79]","[849,235,31,84]",0.68,IoU 0.68 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C357,img_021.jpg,iou_thap,101|103,motorcycle,motorcycle,"[127,442,327,172]","[69,412,380,214]",0.67,IoU 0.67 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C358,img_021.jpg,iou_thap,101|103,person,person,"[641,295,84,100]","[635,294,87,140]",0.65,IoU 0.65 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C359,img_021.jpg,iou_thap,101|103,bus,bus,"[830,185,90,34]","[831,187,114,36]",0.65,IoU 0.65 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C360,img_021.jpg,iou_thap,101|103,motorcycle,motorcycle,"[706,353,51,86]","[699,353,68,101]",0.64,IoU 0.64 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C361,img_021.jpg,iou_thap,101|103,car,car,"[250,237,117,64]","[251,238,157,73]",0.64,IoU 0.64 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C362,img_021.jpg,iou_thap,101|103,person,person,"[307,248,33,76]","[305,251,47,79]",0.63,IoU 0.63 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C363,img_021.jpg,iou_thap,101|103,car,car,"[683,208,40,13]","[682,209,48,16]",0.63,IoU 0.63 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C364,img_021.jpg,iou_thap,101|103,person,person,"[537,223,20,49]","[536,223,29,55]",0.63,IoU 0.63 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C365,img_021.jpg,iou_thap,101|103,person,person,"[500,257,67,64]","[499,257,69,102]",0.61,IoU 0.61 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C366,img_021.jpg,iou_thap,101|103,person,person,"[257,259,103,105]","[261,264,86,140]",0.60,IoU 0.60 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C367,img_021.jpg,iou_thap,101|103,person,person,"[397,272,73,129]","[397,266,92,172]",0.59,IoU 0.59 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C368,img_021.jpg,iou_thap,101|103,person,person,"[150,257,37,85]","[150,257,47,114]",0.59,IoU 0.59 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C369,img_021.jpg,iou_thap,101|103,person,person,"[603,245,40,61]","[604,244,42,100]",0.57,IoU 0.57 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C370,img_021.jpg,iou_thap,101|103,motorcycle,motorcycle,"[257,546,193,97]","[152,538,318,105]",0.56,IoU 0.56 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C371,img_021.jpg,iou_thap,101|103,car,car,"[800,203,30,14]","[794,202,45,13]",0.56,IoU 0.56 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C372,img_021.jpg,iou_thap,101|103,motorcycle,motorcycle,"[797,301,46,65]","[793,274,56,89]",0.55,IoU 0.55 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C373,img_021.jpg,iou_thap,101|103,person,person,"[442,239,48,58]","[441,250,53,69]",0.54,IoU 0.54 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C374,img_021.jpg,iou_thap,101|103,person,person,"[668,244,75,69]","[673,245,51,93]",0.53,IoU 0.53 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C375,img_021.jpg,iou_thap,101|103,person,person,"[503,290,85,83]","[503,291,82,155]",0.52,IoU 0.52 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C376,img_021.jpg,iou_thap,101|103,car,car,"[757,210,40,16]","[757,210,56,21]",0.51,IoU 0.51 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C377,img_021.jpg,sai_thuoc_tinh,101|103,motorcycle,motorcycle,"[456,330,146,196]","[452,329,157,200]",0.91,occluded_level: 101=0 vs 103=2
+C378,img_021.jpg,sai_thuoc_tinh,101|103,person,person,"[105,438,305,205]","[124,446,303,197]",0.85,occluded_level: 101=0 vs 103=1
+C379,img_021.jpg,sai_thuoc_tinh,101|103,motorcycle,motorcycle,"[537,410,180,233]","[537,408,214,227]",0.81,truncated: 101=no vs 103=yes
+C380,img_021.jpg,sai_thuoc_tinh,101|103,person,person,"[470,304,107,153]","[466,310,101,152]",0.81,occluded_level: 101=0 vs 103=2
+C381,img_021.jpg,sai_thuoc_tinh,101|103,person,person,"[700,259,60,136]","[697,263,69,138]",0.80,occluded_level: 101=0 vs 103=2
+C382,img_021.jpg,sai_thuoc_tinh,101|103,person,person,"[0,297,70,163]","[0,289,77,184]",0.80,occluded_level: 101=0 vs 103=2
+C383,img_021.jpg,sai_thuoc_tinh,101|103,person,person,"[37,261,77,125]","[30,262,86,138]",0.80,truncated: 101=no vs 103=yes
+C384,img_021.jpg,sai_thuoc_tinh,101|103,person,person,"[258,329,166,253]","[230,330,202,259]",0.80,occluded_level: 101=0 vs 103=3
+C385,img_021.jpg,sai_thuoc_tinh,101|103,person,person,"[200,270,60,95]","[201,271,70,99]",0.79,occluded_level: 101=0 vs 103=2
+C386,img_021.jpg,sai_thuoc_tinh,101|103,person,person,"[337,259,26,72]","[338,259,30,78]",0.72,occluded_level: 101=0 vs 103=2
+C387,img_021.jpg,sai_thuoc_tinh,101|103,person,person,"[567,257,50,102]","[568,255,55,125]",0.71,occluded_level: 101=0 vs 103=2
+C388,img_021.jpg,sai_thuoc_tinh,101|103,person,person,"[346,266,56,104]","[348,280,53,108]",0.70,occluded_level: 101=0 vs 103=1
+C389,img_021.jpg,sai_thuoc_tinh,101|103,person,person,"[844,232,41,79]","[849,235,31,84]",0.68,occluded_level: 101=0 vs 103=1
+C390,img_021.jpg,sai_thuoc_tinh,101|103,motorcycle,motorcycle,"[127,442,327,172]","[69,412,380,214]",0.67,occluded_level: 101=0 vs 103=2
+C391,img_021.jpg,sai_thuoc_tinh,101|103,bus,bus,"[830,185,90,34]","[831,187,114,36]",0.65,occluded_level: 101=0 vs 103=1
+C392,img_021.jpg,sai_thuoc_tinh,101|103,motorcycle,motorcycle,"[706,353,51,86]","[699,353,68,101]",0.64,occluded_level: 101=0 vs 103=3
+C393,img_021.jpg,sai_thuoc_tinh,101|103,car,car,"[250,237,117,64]","[251,238,157,73]",0.64,occluded_level: 101=0 vs 103=3
+C394,img_021.jpg,sai_thuoc_tinh,101|103,person,person,"[307,248,33,76]","[305,251,47,79]",0.63,occluded_level: 101=0 vs 103=2
+C395,img_021.jpg,sai_thuoc_tinh,101|103,car,car,"[683,208,40,13]","[682,209,48,16]",0.63,occluded_level: 101=0 vs 103=3
+C396,img_021.jpg,sai_thuoc_tinh,101|103,person,person,"[537,223,20,49]","[536,223,29,55]",0.63,occluded_level: 101=0 vs 103=1
+C397,img_021.jpg,sai_thuoc_tinh,101|103,person,person,"[500,257,67,64]","[499,257,69,102]",0.61,occluded_level: 101=0 vs 103=2
+C398,img_021.jpg,sai_thuoc_tinh,101|103,person,person,"[257,259,103,105]","[261,264,86,140]",0.60,occluded_level: 101=0 vs 103=2
+C399,img_021.jpg,sai_thuoc_tinh,101|103,person,person,"[397,272,73,129]","[397,266,92,172]",0.59,occluded_level: 101=0 vs 103=2
+C400,img_021.jpg,sai_thuoc_tinh,101|103,person,person,"[150,257,37,85]","[150,257,47,114]",0.59,occluded_level: 101=0 vs 103=3
+C401,img_021.jpg,sai_thuoc_tinh,101|103,person,person,"[603,245,40,61]","[604,244,42,100]",0.57,occluded_level: 101=0 vs 103=2
+C402,img_021.jpg,sai_thuoc_tinh,101|103,motorcycle,motorcycle,"[257,546,193,97]","[152,538,318,105]",0.56,occluded_level: 101=0 vs 103=2; truncated: 101=no vs 103=yes
+C403,img_021.jpg,sai_thuoc_tinh,101|103,car,car,"[800,203,30,14]","[794,202,45,13]",0.56,occluded_level: 101=0 vs 103=3
+C404,img_021.jpg,sai_thuoc_tinh,101|103,person,person,"[442,239,48,58]","[441,250,53,69]",0.54,occluded_level: 101=0 vs 103=2
+C405,img_021.jpg,sai_thuoc_tinh,101|103,person,person,"[668,244,75,69]","[673,245,51,93]",0.53,occluded_level: 101=0 vs 103=2
+C406,img_021.jpg,sai_thuoc_tinh,101|103,person,person,"[503,290,85,83]","[503,291,82,155]",0.52,truncated: 101=no vs 103=yes
+C407,img_021.jpg,sai_thuoc_tinh,101|103,car,car,"[757,210,40,16]","[757,210,56,21]",0.51,occluded_level: 101=0 vs 103=3
+C408,img_022.jpg,bo_sot_thua,101|103,motorcycle,,"[487,478,83,144]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C409,img_022.jpg,bo_sot_thua,101|103,person,,"[577,465,45,66]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C410,img_022.jpg,bo_sot_thua,101|103,,person,,"[577,461,82,118]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C411,img_023.jpg,bo_sot_thua,101|103,motorcycle,,"[597,184,16,30]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C412,img_023.jpg,bo_sot_thua,101|103,motorcycle,,"[938,236,22,94]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C413,img_023.jpg,bo_sot_thua,101|103,car,,"[830,177,20,14]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C414,img_023.jpg,bo_sot_thua,101|103,motorcycle,,"[900,225,30,65]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C415,img_023.jpg,bo_sot_thua,101|103,person,,"[90,129,27,64]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C416,img_023.jpg,bo_sot_thua,101|103,,motorcycle,,"[813,181,50,33]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C417,img_023.jpg,bo_sot_thua,101|103,,motorcycle,,"[817,184,59,45]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C418,img_023.jpg,bo_sot_thua,101|103,,motorcycle,,"[449,185,47,34]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C419,img_023.jpg,bo_sot_thua,101|103,,motorcycle,,"[424,176,58,46]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C420,img_023.jpg,bo_sot_thua,101|103,,motorcycle,,"[414,176,53,47]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C421,img_023.jpg,bo_sot_thua,101|103,,motorcycle,,"[400,178,56,45]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C422,img_023.jpg,bo_sot_thua,101|103,,motorcycle,,"[387,187,39,41]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C423,img_023.jpg,iou_thap,101|103,person,person,"[623,9,127,426]","[602,9,152,428]",0.83,IoU 0.83 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C424,img_023.jpg,iou_thap,101|103,bicycle,three_wheeler,"[570,210,218,321]","[558,166,235,363]",0.81,IoU 0.81 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C425,img_023.jpg,iou_thap,101|103,person,person,"[750,165,32,82]","[753,164,31,82]",0.81,IoU 0.81 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C426,img_023.jpg,iou_thap,101|103,person,person,"[503,159,44,94]","[504,159,48,102]",0.81,IoU 0.81 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C427,img_023.jpg,iou_thap,101|103,motorcycle,motorcycle,"[510,214,40,60]","[502,209,49,64]",0.74,IoU 0.74 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C428,img_023.jpg,iou_thap,101|103,motorcycle,motorcycle,"[567,185,13,25]","[562,185,21,25]",0.60,IoU 0.60 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C429,img_023.jpg,iou_thap,101|103,person,person,"[60,126,40,130]","[53,132,57,153]",0.55,IoU 0.55 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C430,img_023.jpg,sai_lop,101|103,bicycle,three_wheeler,"[570,210,218,321]","[558,166,235,363]",0.81,"101 gán bicycle, 103 gán three_wheeler cho cùng một vật"
+C431,img_023.jpg,sai_thuoc_tinh,101|103,motorcycle,motorcycle,"[394,188,39,39]","[395,188,39,39]",0.93,occluded_level: 101=0 vs 103=2
+C432,img_023.jpg,sai_thuoc_tinh,101|103,person,person,"[896,199,64,110]","[903,201,57,111]",0.86,occluded_level: 101=0 vs 103=2; truncated: 101=no vs 103=yes
+C433,img_023.jpg,sai_thuoc_tinh,101|103,person,person,"[750,165,32,82]","[753,164,31,82]",0.81,occluded_level: 101=0 vs 103=2
+C434,img_023.jpg,sai_thuoc_tinh,101|103,car,car,"[790,176,35,28]","[790,174,40,31]",0.79,occluded_level: 101=0 vs 103=1
+C435,img_023.jpg,sai_thuoc_tinh,101|103,bicycle,bicycle,"[813,190,67,47]","[817,195,67,42]",0.78,occluded_level: 101=0 vs 103=1
+C436,img_023.jpg,sai_thuoc_tinh,101|103,motorcycle,motorcycle,"[510,214,40,60]","[502,209,49,64]",0.74,occluded_level: 101=0 vs 103=2
+C437,img_023.jpg,sai_thuoc_tinh,101|103,person,person,"[60,126,40,130]","[53,132,57,153]",0.55,occluded_level: 101=0 vs 103=2
+C438,img_024.jpg,bo_sot_thua,101|103,person,,"[767,193,13,14]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C439,img_024.jpg,bo_sot_thua,101|103,car,,"[373,215,100,23]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C440,img_024.jpg,bo_sot_thua,101|103,person,,"[827,193,16,15]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C441,img_024.jpg,bo_sot_thua,101|103,person,,"[810,198,10,9]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C442,img_024.jpg,bo_sot_thua,101|103,car,,"[242,47,458,199]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C443,img_024.jpg,bo_sot_thua,101|103,car,,"[170,206,143,64]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C444,img_024.jpg,bo_sot_thua,101|103,car,,"[924,206,36,34]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C445,img_024.jpg,bo_sot_thua,101|103,car,,"[673,207,47,38]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C446,img_024.jpg,iou_thap,101|103,car,car,"[0,201,229,235]","[0,197,260,247]",0.84,IoU 0.84 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C447,img_024.jpg,iou_thap,101|103,car,car,"[856,212,104,118]","[834,211,126,117]",0.81,IoU 0.81 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C448,img_024.jpg,sai_thuoc_tinh,101|103,car,car,"[78,234,758,465]","[92,235,742,459]",0.97,occluded_level: 101=0 vs 103=1; truncated: 101=no vs 103=yes
+C449,img_024.jpg,sai_thuoc_tinh,101|103,car,car,"[697,216,227,185]","[698,220,231,181]",0.95,occluded_level: 101=0 vs 103=2
+C450,img_024.jpg,sai_thuoc_tinh,101|103,car,car,"[0,201,229,235]","[0,197,260,247]",0.84,occluded_level: 101=0 vs 103=1
+C451,img_024.jpg,sai_thuoc_tinh,101|103,car,car,"[856,212,104,118]","[834,211,126,117]",0.81,truncated: 101=no vs 103=yes
+C452,img_025.jpg,bo_sot_thua,101|103,person,,"[350,370,13,21]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C453,img_025.jpg,bo_sot_thua,101|103,car,,"[687,357,23,33]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C454,img_025.jpg,bo_sot_thua,101|103,person,,"[34,371,138,57]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C455,img_025.jpg,bo_sot_thua,101|103,person,,"[150,368,23,25]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C456,img_025.jpg,bo_sot_thua,101|103,car,,"[903,342,57,75]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C457,img_025.jpg,bo_sot_thua,101|103,motorcycle,,"[513,362,20,15]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C458,img_025.jpg,bo_sot_thua,101|103,,car,,"[854,345,106,79]",,Chỉ 103 vẽ car này. 101 bỏ sót hoặc 103 vẽ thừa.
+C459,img_025.jpg,bo_sot_thua,101|103,,person,,"[580,355,8,17]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C460,img_025.jpg,bo_sot_thua,101|103,,person,,"[575,354,5,16]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C461,img_025.jpg,bo_sot_thua,101|103,,person,,"[572,355,4,15]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C462,img_025.jpg,bo_sot_thua,101|103,,person,,"[156,370,19,40]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C463,img_025.jpg,bo_sot_thua,101|103,,car,,"[687,359,42,34]",,Chỉ 103 vẽ car này. 101 bỏ sót hoặc 103 vẽ thừa.
+C464,img_025.jpg,iou_thap,101|103,motorcycle,motorcycle,"[807,384,57,59]","[807,375,58,68]",0.85,IoU 0.85 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C465,img_025.jpg,iou_thap,101|103,car,car,"[743,348,65,59]","[736,344,73,65]",0.81,IoU 0.81 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C466,img_025.jpg,iou_thap,101|103,person,person,"[537,342,26,71]","[535,343,23,70]",0.76,IoU 0.76 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C467,img_025.jpg,iou_thap,101|103,person,person,"[223,360,14,26]","[223,361,14,34]",0.67,IoU 0.67 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C468,img_025.jpg,iou_thap,101|103,car,car,"[653,353,17,22]","[649,354,25,22]",0.66,IoU 0.66 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C469,img_025.jpg,iou_thap,101|103,person,person,"[567,353,6,13]","[567,353,5,16]",0.66,IoU 0.66 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C470,img_025.jpg,iou_thap,101|103,person,person,"[210,371,13,17]","[208,371,15,22]",0.61,IoU 0.61 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C471,img_025.jpg,iou_thap,101|103,person,person,"[253,377,14,25]","[250,378,19,28]",0.61,IoU 0.61 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C472,img_025.jpg,iou_thap,101|103,person,person,"[367,362,20,40]","[366,361,19,28]",0.60,IoU 0.60 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C473,img_025.jpg,sai_thuoc_tinh,101|103,person,person,"[430,359,20,36]","[430,357,20,34]",0.86,occluded_level: 101=0 vs 103=3
+C474,img_025.jpg,sai_thuoc_tinh,101|103,car,car,"[787,352,36,36]","[786,352,45,39]",0.74,occluded_level: 101=0 vs 103=3
+C475,img_025.jpg,sai_thuoc_tinh,101|103,car,car,"[666,353,31,31]","[665,352,40,31]",0.73,occluded_level: 101=0 vs 103=2
+C476,img_025.jpg,sai_thuoc_tinh,101|103,person,person,"[223,360,14,26]","[223,361,14,34]",0.67,occluded_level: 101=0 vs 103=2
+C477,img_025.jpg,sai_thuoc_tinh,101|103,car,car,"[653,353,17,22]","[649,354,25,22]",0.66,occluded_level: 101=0 vs 103=3
+C478,img_025.jpg,sai_thuoc_tinh,101|103,person,person,"[210,371,13,17]","[208,371,15,22]",0.61,occluded_level: 101=0 vs 103=3
+C479,img_025.jpg,sai_thuoc_tinh,101|103,person,person,"[253,377,14,25]","[250,378,19,28]",0.61,occluded_level: 101=0 vs 103=3
+C480,img_026.jpg,iou_thap,101|103,person,person,"[274,537,205,469]","[291,531,250,472]",0.69,IoU 0.69 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C481,img_026.jpg,sai_thuoc_tinh,101|103,motorcycle,motorcycle,"[233,718,475,306]","[204,732,516,292]",0.88,truncated: 101=no vs 103=yes
+C482,img_026.jpg,sai_thuoc_tinh,101|103,person,person,"[274,537,205,469]","[291,531,250,472]",0.69,occluded_level: 101=0 vs 103=2
+C483,img_027.jpg,bat_dong_ignore,101|103,,,,"[3,0,957,720]",,Vùng ignore không ghép được với vùng của người kia.
+C484,img_027.jpg,bat_dong_ignore,101|103,truck,,"[355,205,522,288]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C485,img_028.jpg,iou_thap,101|103,car,car,"[620,335,277,87]","[597,330,303,126]",0.63,IoU 0.63 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C486,img_028.jpg,sai_lop,101|103,truck,car,"[29,302,901,398]","[12,297,920,411]",0.95,"101 gán truck, 103 gán car cho cùng một vật"
+C487,img_028.jpg,sai_thuoc_tinh,101|103,car,car,"[620,335,277,87]","[597,330,303,126]",0.63,occluded_level: 101=0 vs 103=2
+C488,img_029.jpg,bo_sot_thua,101|103,car,,"[247,204,16,19]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C489,img_029.jpg,bo_sot_thua,101|103,car,,"[293,198,14,32]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C490,img_029.jpg,bo_sot_thua,101|103,motorcycle,,"[332,210,225,161]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C491,img_029.jpg,bo_sot_thua,101|103,person,,"[100,197,10,27]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C492,img_029.jpg,bo_sot_thua,101|103,bicycle,,"[277,218,16,21]",,,Chỉ 101 vẽ bicycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C493,img_029.jpg,bo_sot_thua,101|103,person,,"[0,197,7,33]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C494,img_029.jpg,bo_sot_thua,101|103,,motorcycle,,"[74,118,837,257]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C495,img_029.jpg,bo_sot_thua,101|103,,bicycle,,"[272,211,26,33]",,Chỉ 103 vẽ bicycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C496,img_029.jpg,iou_thap,101|103,person,person,"[108,183,42,87]","[112,184,36,89]",0.83,IoU 0.83 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C497,img_029.jpg,iou_thap,101|103,person,person,"[183,174,43,121]","[180,170,48,141]",0.78,IoU 0.78 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C498,img_029.jpg,iou_thap,101|103,person,person,"[220,183,23,71]","[218,182,24,83]",0.74,IoU 0.74 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C499,img_029.jpg,iou_thap,101|103,bicycle,bicycle,"[119,229,27,58]","[106,223,38,63]",0.57,IoU 0.57 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C500,img_029.jpg,sai_thuoc_tinh,101|103,person,person,"[410,161,84,216]","[416,161,74,222]",0.86,occluded_level: 101=0 vs 103=1
+C501,img_029.jpg,sai_thuoc_tinh,101|103,person,person,"[347,188,20,28]","[348,188,21,28]",0.86,occluded_level: 101=0 vs 103=3
+C502,img_029.jpg,sai_thuoc_tinh,101|103,bicycle,bicycle,"[213,230,27,49]","[214,230,30,50]",0.84,occluded_level: 101=0 vs 103=2
+C503,img_029.jpg,sai_thuoc_tinh,101|103,person,person,"[183,174,43,121]","[180,170,48,141]",0.78,occluded_level: 101=0 vs 103=1
+C504,img_029.jpg,sai_thuoc_tinh,101|103,person,person,"[277,193,23,40]","[277,193,19,45]",0.75,occluded_level: 101=0 vs 103=1
+C505,img_029.jpg,sai_thuoc_tinh,101|103,person,person,"[220,183,23,71]","[218,182,24,83]",0.74,occluded_level: 101=0 vs 103=2
+C506,img_030.jpg,bo_sot_thua,101|103,person,,"[177,15,33,70]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C507,img_030.jpg,bo_sot_thua,101|103,person,,"[220,18,33,77]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C508,img_030.jpg,bo_sot_thua,101|103,person,,"[130,15,43,92]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C509,img_030.jpg,bo_sot_thua,101|103,person,,"[401,15,39,70]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C510,img_030.jpg,bo_sot_thua,101|103,motorcycle,,"[0,218,330,334]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C511,img_030.jpg,bo_sot_thua,101|103,person,,"[557,49,29,41]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C512,img_030.jpg,bo_sot_thua,101|103,person,,"[813,40,34,43]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C513,img_030.jpg,bo_sot_thua,101|103,,motorcycle,,"[368,107,195,170]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C514,img_030.jpg,bo_sot_thua,101|103,,motorcycle,,"[437,122,165,168]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C515,img_030.jpg,bo_sot_thua,101|103,,motorcycle,,"[514,113,145,179]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C516,img_030.jpg,bo_sot_thua,101|103,,motorcycle,,"[572,111,186,138]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C517,img_030.jpg,bo_sot_thua,101|103,,motorcycle,,"[769,144,69,109]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C518,img_030.jpg,bo_sot_thua,101|103,,motorcycle,,"[813,141,45,95]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C519,img_030.jpg,bo_sot_thua,101|103,,motorcycle,,"[772,98,150,131]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C520,img_030.jpg,bo_sot_thua,101|103,,motorcycle,,"[836,102,124,116]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C521,img_030.jpg,bo_sot_thua,101|103,,motorcycle,,"[0,160,136,205]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C522,img_030.jpg,bo_sot_thua,101|103,,motorcycle,,"[0,230,33,171]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C523,img_030.jpg,bo_sot_thua,101|103,,motorcycle,,"[518,176,442,508]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C524,img_030.jpg,bo_sot_thua,101|103,,motorcycle,,"[96,146,161,197]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C525,img_030.jpg,iou_thap,101|103,person,person,"[699,26,78,244]","[692,16,89,262]",0.82,IoU 0.82 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C526,img_030.jpg,iou_thap,101|103,motorcycle,motorcycle,"[0,373,465,347]","[72,374,431,346]",0.78,IoU 0.78 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C527,img_030.jpg,iou_thap,101|103,person,person,"[700,54,27,33]","[701,54,31,41]",0.68,IoU 0.68 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C528,img_030.jpg,iou_thap,101|103,motorcycle,motorcycle,"[297,134,273,150]","[289,124,218,192]",0.61,IoU 0.61 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C529,img_030.jpg,iou_thap,101|103,motorcycle,motorcycle,"[684,237,276,480]","[665,240,295,284]",0.57,IoU 0.57 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C530,img_030.jpg,sai_thuoc_tinh,101|103,motorcycle,motorcycle,"[350,269,557,449]","[343,275,581,445]",0.94,occluded_level: 101=0 vs 103=1; truncated: 101=no vs 103=yes
+C531,img_030.jpg,sai_thuoc_tinh,101|103,motorcycle,motorcycle,"[180,131,176,216]","[183,117,173,232]",0.91,occluded_level: 101=0 vs 103=1
+C532,img_030.jpg,sai_thuoc_tinh,101|103,person,person,"[699,26,78,244]","[692,16,89,262]",0.82,occluded_level: 101=0 vs 103=2
+C533,img_030.jpg,sai_thuoc_tinh,101|103,motorcycle,motorcycle,"[0,373,465,347]","[72,374,431,346]",0.78,truncated: 101=no vs 103=yes
+C534,img_030.jpg,sai_thuoc_tinh,101|103,person,person,"[680,57,20,33]","[679,56,22,42]",0.72,occluded_level: 101=0 vs 103=2
+C535,img_030.jpg,sai_thuoc_tinh,101|103,person,person,"[700,54,27,33]","[701,54,31,41]",0.68,occluded_level: 101=0 vs 103=2
+C536,img_030.jpg,sai_thuoc_tinh,101|103,motorcycle,motorcycle,"[297,134,273,150]","[289,124,218,192]",0.61,occluded_level: 101=0 vs 103=2
+C537,img_030.jpg,sai_thuoc_tinh,101|103,motorcycle,motorcycle,"[684,237,276,480]","[665,240,295,284]",0.57,occluded_level: 101=0 vs 103=3; truncated: 101=no vs 103=yes
+C538,img_031.jpg,bo_sot_thua,101|103,person,,"[750,356,37,128]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C539,img_031.jpg,bo_sot_thua,101|103,motorcycle,,"[64,402,42,58]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C540,img_031.jpg,bo_sot_thua,101|103,person,,"[213,375,14,42]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C541,img_031.jpg,bo_sot_thua,101|103,motorcycle,,"[717,371,14,16]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C542,img_031.jpg,bo_sot_thua,101|103,car,,"[543,360,27,16]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C543,img_031.jpg,bo_sot_thua,101|103,person,,"[150,369,13,58]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C544,img_031.jpg,bo_sot_thua,101|103,person,,"[453,362,13,12]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C545,img_031.jpg,bo_sot_thua,101|103,person,,"[161,372,9,53]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C546,img_031.jpg,bo_sot_thua,101|103,motorcycle,,"[0,393,27,47]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C547,img_031.jpg,bo_sot_thua,101|103,,person,,"[448,364,19,18]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C548,img_031.jpg,bo_sot_thua,101|103,,person,,"[407,367,16,39]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C549,img_031.jpg,bo_sot_thua,101|103,,person,,"[416,364,15,39]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C550,img_031.jpg,bo_sot_thua,101|103,,person,,"[429,357,10,31]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C551,img_031.jpg,bo_sot_thua,101|103,,person,,"[401,357,13,34]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C552,img_031.jpg,bo_sot_thua,101|103,,person,,"[387,357,14,29]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C553,img_031.jpg,bo_sot_thua,101|103,,motorcycle,,"[467,368,18,13]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C554,img_031.jpg,bo_sot_thua,101|103,,car,,"[500,361,49,19]",,Chỉ 103 vẽ car này. 101 bỏ sót hoặc 103 vẽ thừa.
+C555,img_031.jpg,iou_thap,101|103,person,person,"[363,354,14,17]","[362,355,15,21]",0.67,IoU 0.67 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C556,img_031.jpg,iou_thap,101|103,person,person,"[163,372,23,57]","[164,370,16,59]",0.66,IoU 0.66 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C557,img_031.jpg,iou_thap,101|103,person,person,"[203,368,10,50]","[202,364,14,59]",0.60,IoU 0.60 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C558,img_031.jpg,iou_thap,101|103,person,person,"[190,362,17,62]","[187,362,15,64]",0.60,IoU 0.60 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C559,img_031.jpg,iou_thap,101|103,person,person,"[237,373,23,33]","[236,372,26,49]",0.60,IoU 0.60 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C560,img_031.jpg,iou_thap,101|103,person,person,"[377,356,10,20]","[378,356,12,29]",0.51,IoU 0.51 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C561,img_031.jpg,sai_thuoc_tinh,101|103,bus,bus,"[570,314,116,115]","[575,313,109,117]",0.93,occluded_level: 101=0 vs 103=1
+C562,img_031.jpg,sai_thuoc_tinh,101|103,car,car,"[493,366,48,45]","[491,370,49,45]",0.78,occluded_level: 101=0 vs 103=2
+C563,img_031.jpg,sai_thuoc_tinh,101|103,person,person,"[363,354,14,17]","[362,355,15,21]",0.67,occluded_level: 101=0 vs 103=3
+C564,img_031.jpg,sai_thuoc_tinh,101|103,person,person,"[203,368,10,50]","[202,364,14,59]",0.60,occluded_level: 101=0 vs 103=1
+C565,img_031.jpg,sai_thuoc_tinh,101|103,person,person,"[377,356,10,20]","[378,356,12,29]",0.51,occluded_level: 101=0 vs 103=1
+C566,img_032.jpg,bo_sot_thua,101|103,person,,"[156,263,17,91]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C567,img_032.jpg,bo_sot_thua,101|103,car,,"[656,277,30,21]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C568,img_032.jpg,bo_sot_thua,101|103,person,,"[780,271,17,36]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C569,img_032.jpg,bo_sot_thua,101|103,person,,"[0,267,18,52]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C570,img_032.jpg,bo_sot_thua,101|103,person,,"[517,256,30,108]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C571,img_032.jpg,bo_sot_thua,101|103,car,,"[84,273,23,46]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C572,img_032.jpg,bo_sot_thua,101|103,person,,"[557,260,23,92]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C573,img_032.jpg,bo_sot_thua,101|103,person,,"[25,265,18,63]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C574,img_032.jpg,bo_sot_thua,101|103,car,,"[198,277,58,63]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C575,img_032.jpg,bo_sot_thua,101|103,person,,"[810,275,19,29]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C576,img_032.jpg,bo_sot_thua,101|103,person,,"[247,262,23,36]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C577,img_032.jpg,bo_sot_thua,101|103,car,,"[920,282,10,34]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C578,img_032.jpg,bo_sot_thua,101|103,car,,"[917,281,12,31]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C579,img_032.jpg,bo_sot_thua,101|103,person,,"[646,277,17,88]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C580,img_032.jpg,bo_sot_thua,101|103,,car,,"[921,278,39,41]",,Chỉ 103 vẽ car này. 101 bỏ sót hoặc 103 vẽ thừa.
+C581,img_032.jpg,bo_sot_thua,101|103,,person,,"[17,260,22,72]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C582,img_032.jpg,bo_sot_thua,101|103,,person,,"[246,263,37,74]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C583,img_032.jpg,iou_thap,101|103,person,person,"[110,258,30,96]","[114,259,26,96]",0.83,IoU 0.83 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C584,img_032.jpg,iou_thap,101|103,person,person,"[60,273,30,67]","[59,278,31,70]",0.81,IoU 0.81 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C585,img_032.jpg,iou_thap,101|103,person,person,"[353,265,27,95]","[354,266,22,95]",0.80,IoU 0.80 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C586,img_032.jpg,iou_thap,101|103,person,person,"[610,275,20,90]","[610,276,17,93]",0.79,IoU 0.79 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C587,img_032.jpg,iou_thap,101|103,person,person,"[780,273,39,96]","[783,271,32,100]",0.79,IoU 0.79 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C588,img_032.jpg,iou_thap,101|103,person,person,"[627,279,32,88]","[630,278,25,91]",0.77,IoU 0.77 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C589,img_032.jpg,iou_thap,101|103,person,person,"[563,272,35,95]","[568,273,33,95]",0.77,IoU 0.77 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C590,img_032.jpg,iou_thap,101|103,person,person,"[137,264,30,92]","[138,264,22,93]",0.74,IoU 0.74 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C591,img_032.jpg,iou_thap,101|103,person,person,"[250,275,33,85]","[254,274,24,86]",0.73,IoU 0.73 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C592,img_032.jpg,iou_thap,101|103,person,person,"[268,258,23,92]","[266,258,27,77]",0.73,IoU 0.73 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C593,img_032.jpg,iou_thap,101|103,person,person,"[283,263,30,95]","[286,267,22,92]",0.71,IoU 0.71 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C594,img_032.jpg,iou_thap,101|103,person,person,"[492,270,34,95]","[499,272,29,93]",0.71,IoU 0.71 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C595,img_032.jpg,iou_thap,101|103,person,person,"[40,258,23,75]","[42,258,28,78]",0.69,IoU 0.69 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C596,img_032.jpg,iou_thap,101|103,car,car,"[689,271,68,90]","[682,269,82,71]",0.65,IoU 0.65 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C597,img_032.jpg,iou_thap,101|103,person,person,"[101,260,19,86]","[103,260,25,85]",0.63,IoU 0.63 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C598,img_032.jpg,iou_thap,101|103,person,person,"[310,265,35,95]","[313,265,22,96]",0.63,IoU 0.63 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C599,img_032.jpg,iou_thap,101|103,car,car,"[380,269,63,71]","[349,270,101,74]",0.58,IoU 0.58 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C600,img_032.jpg,iou_thap,101|103,car,car,"[883,283,23,32]","[868,282,40,32]",0.56,IoU 0.56 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C601,img_032.jpg,iou_thap,101|103,person,person,"[170,260,39,96]","[170,267,23,89]",0.55,IoU 0.55 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C602,img_032.jpg,iou_thap,101|103,person,person,"[4,252,16,67]","[5,250,21,85]",0.53,IoU 0.53 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C603,img_032.jpg,sai_thuoc_tinh,101|103,car,car,"[921,277,39,61]","[922,278,38,60]",0.94,occluded_level: 101=0 vs 103=1; truncated: 101=no vs 103=yes
+C604,img_032.jpg,sai_thuoc_tinh,101|103,person,person,"[377,275,28,87]","[378,276,27,88]",0.91,occluded_level: 101=0 vs 103=1
+C605,img_032.jpg,sai_thuoc_tinh,101|103,person,person,"[333,269,24,87]","[334,268,22,88]",0.90,occluded_level: 101=0 vs 103=1
+C606,img_032.jpg,sai_thuoc_tinh,101|103,car,car,"[0,315,153,148]","[0,304,153,164]",0.90,truncated: 101=no vs 103=yes
+C607,img_032.jpg,sai_thuoc_tinh,101|103,person,person,"[593,266,24,101]","[593,267,22,98]",0.89,occluded_level: 101=0 vs 103=1
+C608,img_032.jpg,sai_thuoc_tinh,101|103,person,person,"[60,273,30,67]","[59,278,31,70]",0.81,occluded_level: 101=0 vs 103=1
+C609,img_032.jpg,sai_thuoc_tinh,101|103,person,person,"[610,275,20,90]","[610,276,17,93]",0.79,occluded_level: 101=0 vs 103=2
+C610,img_032.jpg,sai_thuoc_tinh,101|103,person,person,"[268,258,23,92]","[266,258,27,77]",0.73,occluded_level: 101=0 vs 103=3
+C611,img_032.jpg,sai_thuoc_tinh,101|103,person,person,"[40,258,23,75]","[42,258,28,78]",0.69,occluded_level: 101=0 vs 103=2
+C612,img_032.jpg,sai_thuoc_tinh,101|103,car,car,"[689,271,68,90]","[682,269,82,71]",0.65,occluded_level: 101=0 vs 103=1
+C613,img_032.jpg,sai_thuoc_tinh,101|103,person,person,"[101,260,19,86]","[103,260,25,85]",0.63,occluded_level: 101=0 vs 103=2
+C614,img_032.jpg,sai_thuoc_tinh,101|103,car,car,"[380,269,63,71]","[349,270,101,74]",0.58,occluded_level: 101=0 vs 103=3
+C615,img_032.jpg,sai_thuoc_tinh,101|103,car,car,"[883,283,23,32]","[868,282,40,32]",0.56,occluded_level: 101=0 vs 103=2
+C616,img_032.jpg,sai_thuoc_tinh,101|103,person,person,"[4,252,16,67]","[5,250,21,85]",0.53,occluded_level: 101=0 vs 103=1
+C617,img_033.jpg,bat_dong_ignore,101|103,,,,"[32,118,928,522]",,Vùng ignore không ghép được với vùng của người kia.
+C618,img_033.jpg,bat_dong_ignore,101|103,truck,,"[631,0,329,640]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C619,img_033.jpg,bat_dong_ignore,101|103,bus,,"[632,0,328,640]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C620,img_033.jpg,bat_dong_ignore,101|103,person,,"[121,0,232,640]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C621,img_033.jpg,bat_dong_ignore,101|103,person,,"[446,138,100,502]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C622,img_033.jpg,bo_sot_thua,101|103,person,,"[0,158,60,294]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C623,img_034.jpg,bo_sot_thua,101|103,person,,"[290,233,13,20]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C624,img_034.jpg,bo_sot_thua,101|103,bicycle,,"[150,253,16,33]",,,Chỉ 101 vẽ bicycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C625,img_034.jpg,bo_sot_thua,101|103,motorcycle,,"[697,257,10,16]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C626,img_034.jpg,bo_sot_thua,101|103,person,,"[250,235,21,20]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C627,img_034.jpg,bo_sot_thua,101|103,person,,"[714,253,16,25]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C628,img_034.jpg,bo_sot_thua,101|103,motorcycle,,"[828,276,42,63]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C629,img_034.jpg,bo_sot_thua,101|103,,bicycle,,"[148,251,54,39]",,Chỉ 103 vẽ bicycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C630,img_034.jpg,bo_sot_thua,101|103,,person,,"[288,233,17,41]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C631,img_034.jpg,bo_sot_thua,101|103,,person,,"[260,236,16,39]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C632,img_034.jpg,bo_sot_thua,101|103,,motorcycle,,"[817,243,60,95]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C633,img_034.jpg,iou_thap,101|103,person,person,"[820,221,50,95]","[822,219,53,92]",0.84,IoU 0.84 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C634,img_034.jpg,iou_thap,101|103,person,person,"[597,227,26,68]","[597,228,23,69]",0.83,IoU 0.83 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C635,img_034.jpg,iou_thap,101|103,person,person,"[580,240,14,20]","[581,241,16,23]",0.69,IoU 0.69 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C636,img_034.jpg,iou_thap,101|103,person,person,"[63,227,27,44]","[64,227,29,55]",0.66,IoU 0.66 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C637,img_034.jpg,iou_thap,101|103,person,person,"[153,233,20,31]","[153,232,28,36]",0.60,IoU 0.60 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C638,img_034.jpg,iou_thap,101|103,person,person,"[184,231,13,30]","[182,232,16,39]",0.59,IoU 0.59 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C639,img_034.jpg,iou_thap,101|103,person,person,"[267,234,16,39]","[271,235,15,34]",0.55,IoU 0.55 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C640,img_034.jpg,iou_thap,101|103,person,person,"[737,240,16,27]","[735,241,21,37]",0.52,IoU 0.52 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C641,img_034.jpg,sai_thuoc_tinh,101|103,person,person,"[863,159,97,306]","[862,149,98,316]",0.96,occluded_level: 101=0 vs 103=2; truncated: 101=no vs 103=yes
+C642,img_034.jpg,sai_thuoc_tinh,101|103,motorcycle,motorcycle,"[860,252,100,285]","[858,252,102,272]",0.94,occluded_level: 101=0 vs 103=2; truncated: 101=no vs 103=yes
+C643,img_034.jpg,sai_thuoc_tinh,101|103,car,car,"[357,228,230,83]","[358,226,237,83]",0.94,occluded_level: 101=0 vs 103=1
+C644,img_034.jpg,sai_thuoc_tinh,101|103,person,person,"[820,221,50,95]","[822,219,53,92]",0.84,occluded_level: 101=0 vs 103=1
+C645,img_034.jpg,sai_thuoc_tinh,101|103,bicycle,bicycle,"[574,261,61,43]","[578,253,58,51]",0.77,occluded_level: 101=0 vs 103=2
+C646,img_034.jpg,sai_thuoc_tinh,101|103,person,person,"[580,240,14,20]","[581,241,16,23]",0.69,occluded_level: 101=0 vs 103=3
+C647,img_034.jpg,sai_thuoc_tinh,101|103,person,person,"[153,233,20,31]","[153,232,28,36]",0.60,occluded_level: 101=0 vs 103=1
+C648,img_034.jpg,sai_thuoc_tinh,101|103,person,person,"[184,231,13,30]","[182,232,16,39]",0.59,occluded_level: 101=0 vs 103=3
+C649,img_034.jpg,sai_thuoc_tinh,101|103,person,person,"[267,234,16,39]","[271,235,15,34]",0.55,occluded_level: 101=0 vs 103=1
+C650,img_035.jpg,bo_sot_thua,101|103,person,,"[460,228,23,50]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C651,img_035.jpg,bo_sot_thua,101|103,person,,"[597,238,20,14]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C652,img_035.jpg,bo_sot_thua,101|103,motorcycle,,"[947,270,13,27]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C653,img_035.jpg,bo_sot_thua,101|103,person,,"[570,223,20,27]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C654,img_035.jpg,bo_sot_thua,101|103,person,,"[423,224,37,51]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C655,img_035.jpg,bo_sot_thua,101|103,,motorcycle,,"[939,263,21,35]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C656,img_035.jpg,bo_sot_thua,101|103,,person,,"[569,223,24,48]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C657,img_035.jpg,bo_sot_thua,101|103,,person,,"[551,267,34,50]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C658,img_035.jpg,bo_sot_thua,101|103,,three_wheeler,,"[728,210,120,204]",,Chỉ 103 vẽ three_wheeler này. 101 bỏ sót hoặc 103 vẽ thừa.
+C659,img_035.jpg,bo_sot_thua,101|103,,person,,"[415,222,60,110]",,Chỉ 103 vẽ person này. 101 bỏ sót hoặc 103 vẽ thừa.
+C660,img_035.jpg,bo_sot_thua,101|103,,three_wheeler,,"[336,37,220,380]",,Chỉ 103 vẽ three_wheeler này. 101 bỏ sót hoặc 103 vẽ thừa.
+C661,img_035.jpg,iou_thap,101|103,motorcycle,motorcycle,"[293,265,90,72]","[293,267,100,73]",0.84,IoU 0.84 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C662,img_035.jpg,iou_thap,101|103,person,person,"[333,231,40,85]","[321,226,52,90]",0.72,IoU 0.72 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C663,img_035.jpg,iou_thap,101|103,motorcycle,motorcycle,"[650,306,103,196]","[635,301,147,204]",0.68,IoU 0.68 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C664,img_035.jpg,iou_thap,101|103,person,person,"[667,235,23,38]","[669,232,26,50]",0.60,IoU 0.60 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C665,img_035.jpg,sai_thuoc_tinh,101|103,car,car,"[542,250,117,115]","[538,251,117,112]",0.91,occluded_level: 101=0 vs 103=1
+C666,img_035.jpg,sai_thuoc_tinh,101|103,car,car,"[839,245,108,63]","[831,243,113,66]",0.86,occluded_level: 101=0 vs 103=1
+C667,img_035.jpg,sai_thuoc_tinh,101|103,motorcycle,motorcycle,"[293,265,90,72]","[293,267,100,73]",0.84,occluded_level: 101=0 vs 103=1
+C668,img_035.jpg,sai_thuoc_tinh,101|103,person,person,"[651,233,15,25]","[650,233,14,28]",0.79,occluded_level: 101=0 vs 103=2
+C669,img_035.jpg,sai_thuoc_tinh,101|103,person,person,"[939,240,21,42]","[938,241,21,47]",0.79,occluded_level: 101=0 vs 103=2
+C670,img_035.jpg,sai_thuoc_tinh,101|103,person,person,"[667,235,23,38]","[669,232,26,50]",0.60,occluded_level: 101=0 vs 103=2
+C671,img_036.jpg,bo_sot_thua,101|103,person,,"[814,128,43,54]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C672,img_036.jpg,bo_sot_thua,101|103,person,,"[723,150,20,38]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C673,img_036.jpg,bo_sot_thua,101|103,car,,"[20,152,67,38]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C674,img_036.jpg,bo_sot_thua,101|103,motorcycle,,"[40,213,53,117]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C675,img_036.jpg,bo_sot_thua,101|103,car,,"[0,155,23,22]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C676,img_036.jpg,bo_sot_thua,101|103,motorcycle,,"[760,183,43,80]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C677,img_036.jpg,bo_sot_thua,101|103,motorcycle,,"[0,176,40,119]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C678,img_036.jpg,bo_sot_thua,101|103,,motorcycle,,"[42,188,79,161]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C679,img_036.jpg,bo_sot_thua,101|103,,motorcycle,,"[14,176,84,133]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C680,img_036.jpg,bo_sot_thua,101|103,,car,,"[20,154,91,64]",,Chỉ 103 vẽ car này. 101 bỏ sót hoặc 103 vẽ thừa.
+C681,img_036.jpg,bo_sot_thua,101|103,,car,,"[0,153,42,41]",,Chỉ 103 vẽ car này. 101 bỏ sót hoặc 103 vẽ thừa.
+C682,img_036.jpg,bo_sot_thua,101|103,,motorcycle,,"[944,242,16,85]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C683,img_036.jpg,bo_sot_thua,101|103,,motorcycle,,"[785,190,136,127]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C684,img_036.jpg,bo_sot_thua,101|103,,motorcycle,,"[726,182,81,70]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C685,img_036.jpg,iou_thap,101|103,motorcycle,motorcycle,"[891,212,69,115]","[891,236,69,89]",0.77,IoU 0.77 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C686,img_036.jpg,iou_thap,101|103,motorcycle,motorcycle,"[14,191,56,118]","[0,188,71,106]",0.69,IoU 0.69 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C687,img_036.jpg,iou_thap,101|103,motorcycle,motorcycle,"[791,187,65,107]","[744,187,111,101]",0.56,IoU 0.56 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C688,img_036.jpg,sai_thuoc_tinh,101|103,motorcycle,motorcycle,"[834,195,118,120]","[834,197,122,120]",0.93,occluded_level: 101=0 vs 103=2
+C689,img_036.jpg,sai_thuoc_tinh,101|103,motorcycle,motorcycle,"[891,212,69,115]","[891,236,69,89]",0.77,occluded_level: 101=0 vs 103=2; truncated: 101=no vs 103=yes
+C690,img_036.jpg,sai_thuoc_tinh,101|103,motorcycle,motorcycle,"[791,187,65,107]","[744,187,111,101]",0.56,occluded_level: 101=0 vs 103=3
+C691,img_037.jpg,bo_sot_thua,101|103,bus,,"[713,235,54,117]",,,Chỉ 101 vẽ bus này. 103 bỏ sót hoặc 101 vẽ thừa.
+C692,img_037.jpg,sai_lop,101|103,truck,car,"[220,129,504,365]","[220,140,504,349]",0.95,"101 gán truck, 103 gán car cho cùng một vật"
+C693,img_037.jpg,sai_thuoc_tinh,101|103,bus,bus,"[0,218,236,174]","[0,223,240,189]",0.85,truncated: 101=no vs 103=yes
+C694,img_038.jpg,bat_dong_ignore,101|103,,,,"[0,15,952,488]",,Vùng ignore không ghép được với vùng của người kia.
+C695,img_038.jpg,bat_dong_ignore,101|103,car,,"[859,405,91,73]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C696,img_038.jpg,bat_dong_ignore,101|103,car,,"[180,408,90,65]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C697,img_038.jpg,bat_dong_ignore,101|103,car,,"[604,405,90,70]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C698,img_038.jpg,bat_dong_ignore,101|103,car,,"[773,402,95,76]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C699,img_038.jpg,bat_dong_ignore,101|103,car,,"[801,290,82,45]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C700,img_038.jpg,bat_dong_ignore,101|103,car,,"[87,293,87,49]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C701,img_038.jpg,bat_dong_ignore,101|103,car,,"[743,290,67,45]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C702,img_038.jpg,bat_dong_ignore,101|103,car,,"[223,300,73,42]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C703,img_038.jpg,bat_dong_ignore,101|103,car,,"[283,297,60,44]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C704,img_038.jpg,bat_dong_ignore,101|103,car,,"[527,402,81,77]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C705,img_038.jpg,bat_dong_ignore,101|103,car,,"[443,414,80,61]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C706,img_038.jpg,bat_dong_ignore,101|103,car,,"[413,285,63,53]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C707,img_038.jpg,bat_dong_ignore,101|103,car,,"[682,287,59,45]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C708,img_038.jpg,bat_dong_ignore,101|103,car,,"[693,404,93,73]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C709,img_038.jpg,bat_dong_ignore,101|103,car,,"[877,287,57,46]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C710,img_038.jpg,bat_dong_ignore,101|103,car,,"[363,295,54,46]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C711,img_038.jpg,bat_dong_ignore,101|103,car,,"[30,296,74,46]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C712,img_038.jpg,bat_dong_ignore,101|103,car,,"[470,290,73,51]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C713,img_038.jpg,bat_dong_ignore,101|103,car,,"[106,386,83,87]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C714,img_038.jpg,bat_dong_ignore,101|103,car,,"[620,268,67,34]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C715,img_038.jpg,bat_dong_ignore,101|103,car,,"[543,293,57,44]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C716,img_038.jpg,bat_dong_ignore,101|103,car,,"[440,262,79,40]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C717,img_038.jpg,bat_dong_ignore,101|103,car,,"[523,262,69,47]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C718,img_038.jpg,bat_dong_ignore,101|103,car,,"[157,300,71,44]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C719,img_038.jpg,bat_dong_ignore,101|103,car,,"[281,262,62,40]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C720,img_038.jpg,bat_dong_ignore,101|103,car,,"[368,253,78,49]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C721,img_038.jpg,bat_dong_ignore,101|103,car,,"[17,400,103,76]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C722,img_038.jpg,bat_dong_ignore,101|103,car,,"[254,400,94,75]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C723,img_038.jpg,bat_dong_ignore,101|103,car,,"[33,285,77,31]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C724,img_038.jpg,bat_dong_ignore,101|103,person,,"[920,243,27,83]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C725,img_038.jpg,bat_dong_ignore,101|103,car,,"[153,285,50,29]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C726,img_038.jpg,bat_dong_ignore,101|103,car,,"[203,266,90,41]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C727,img_038.jpg,bat_dong_ignore,101|103,car,,"[282,365,75,49]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C728,img_038.jpg,bat_dong_ignore,101|103,person,,"[844,39,73,132]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C729,img_038.jpg,bat_dong_ignore,101|103,car,,"[353,405,91,73]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C730,img_038.jpg,bat_dong_ignore,101|103,car,,"[622,294,61,43]",,,Chỉ vùng ignore của 103 phủ box của 101.
+C731,img_039.jpg,bo_sot_thua,101|103,motorcycle,,"[720,422,11,15]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C732,img_039.jpg,bo_sot_thua,101|103,car,,"[647,412,21,29]",,,Chỉ 101 vẽ car này. 103 bỏ sót hoặc 101 vẽ thừa.
+C733,img_039.jpg,bo_sot_thua,101|103,motorcycle,,"[810,420,27,47]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C734,img_039.jpg,bo_sot_thua,101|103,motorcycle,,"[606,430,20,37]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C735,img_039.jpg,bo_sot_thua,101|103,bicycle,,"[700,450,17,47]",,,Chỉ 101 vẽ bicycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C736,img_039.jpg,bo_sot_thua,101|103,,bicycle,,"[695,438,34,62]",,Chỉ 103 vẽ bicycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C737,img_039.jpg,bo_sot_thua,101|103,,motorcycle,,"[813,435,27,38]",,Chỉ 103 vẽ motorcycle này. 101 bỏ sót hoặc 103 vẽ thừa.
+C738,img_039.jpg,iou_thap,101|103,motorcycle,motorcycle,"[17,416,40,81]","[16,412,39,91]",0.85,IoU 0.85 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C739,img_039.jpg,iou_thap,101|103,person,person,"[547,412,23,79]","[545,409,26,82]",0.85,IoU 0.85 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C740,img_039.jpg,iou_thap,101|103,person,person,"[700,411,27,76]","[698,409,28,82]",0.84,IoU 0.84 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C741,img_039.jpg,iou_thap,101|103,motorcycle,motorcycle,"[463,427,37,55]","[466,425,37,57]",0.84,IoU 0.84 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C742,img_039.jpg,iou_thap,101|103,person,person,"[863,403,27,90]","[861,399,32,96]",0.78,IoU 0.78 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C743,img_039.jpg,iou_thap,101|103,person,person,"[627,413,30,59]","[628,409,31,54]",0.73,IoU 0.73 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C744,img_039.jpg,iou_thap,101|103,person,person,"[585,416,24,73]","[586,414,18,76]",0.72,IoU 0.72 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C745,img_039.jpg,iou_thap,101|103,person,person,"[567,414,20,75]","[571,412,15,80]",0.72,IoU 0.72 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C746,img_039.jpg,iou_thap,101|103,bicycle,bicycle,"[883,448,60,56]","[898,443,44,60]",0.69,IoU 0.69 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C747,img_039.jpg,iou_thap,101|103,person,person,"[680,415,17,29]","[677,414,20,25]",0.65,IoU 0.65 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C748,img_039.jpg,iou_thap,101|103,person,person,"[840,407,20,88]","[829,404,34,93]",0.56,IoU 0.56 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C749,img_039.jpg,sai_thuoc_tinh,101|103,motorcycle,motorcycle,"[523,427,27,44]","[524,426,28,45]",0.85,occluded_level: 101=0 vs 103=2
+C750,img_039.jpg,sai_thuoc_tinh,101|103,motorcycle,motorcycle,"[17,416,40,81]","[16,412,39,91]",0.85,occluded_level: 101=0 vs 103=3; truncated: 101=no vs 103=yes
+C751,img_039.jpg,sai_thuoc_tinh,101|103,person,person,"[567,414,20,75]","[571,412,15,80]",0.72,occluded_level: 101=0 vs 103=1
+C752,img_039.jpg,sai_thuoc_tinh,101|103,bicycle,bicycle,"[883,448,60,56]","[898,443,44,60]",0.69,occluded_level: 101=0 vs 103=3
+C753,img_040.jpg,bo_sot_thua,101|103,person,,"[453,167,64,99]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C754,img_040.jpg,bo_sot_thua,101|103,person,,"[770,263,38,21]",,,Chỉ 101 vẽ person này. 103 bỏ sót hoặc 101 vẽ thừa.
+C755,img_040.jpg,bo_sot_thua,101|103,motorcycle,,"[54,476,388,164]",,,Chỉ 101 vẽ motorcycle này. 103 bỏ sót hoặc 101 vẽ thừa.
+C756,img_040.jpg,bo_sot_thua,101|103,bus,,"[100,0,370,113]",,,Chỉ 101 vẽ bus này. 103 bỏ sót hoặc 101 vẽ thừa.
+C757,img_040.jpg,bo_sot_thua,101|103,,bus,,"[102,0,376,232]",,Chỉ 103 vẽ bus này. 101 bỏ sót hoặc 103 vẽ thừa.
+C758,img_040.jpg,iou_thap,101|103,car,car,"[182,79,221,179]","[177,79,254,169]",0.83,IoU 0.83 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C759,img_040.jpg,sai_lop,101|103,motorcycle,three_wheeler,"[71,96,118,142]","[74,93,120,144]",0.91,"101 gán motorcycle, 103 gán three_wheeler cho cùng một vật"
+C760,img_040.jpg,sai_lop,101|103,car,three_wheeler,"[311,69,526,334]","[308,70,532,362]",0.91,"101 gán car, 103 gán three_wheeler cho cùng một vật"
+C761,img_040.jpg,sai_thuoc_tinh,101|103,bus,bus,"[0,116,70,96]","[0,117,72,96]",0.95,occluded_level: 101=0 vs 103=1; truncated: 101=no vs 103=yes
+C762,img_040.jpg,sai_thuoc_tinh,101|103,car,car,"[2,150,958,490]","[8,190,952,450]",0.91,occluded_level: 101=0 vs 103=1; truncated: 101=no vs 103=yes
+C763,img_040.jpg,sai_thuoc_tinh,101|103,motorcycle,three_wheeler,"[71,96,118,142]","[74,93,120,144]",0.91,occluded_level: 101=0 vs 103=1
+C764,img_040.jpg,sai_thuoc_tinh,101|103,car,three_wheeler,"[311,69,526,334]","[308,70,532,362]",0.91,occluded_level: 101=0 vs 103=2
+C765,img_040.jpg,sai_thuoc_tinh,101|103,person,person,"[484,104,336,536]","[476,94,378,546]",0.87,truncated: 101=no vs 103=yes
+C766,img_040.jpg,sai_thuoc_tinh,101|103,car,car,"[182,79,221,179]","[177,79,254,169]",0.83,occluded_level: 101=0 vs 103=1; truncated: 101=no vs 103=yes

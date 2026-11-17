@@ -140,7 +140,9 @@ def xywh_to_xyxy(b) -> Box:
 
 
 def xyxy_to_xywh(b: Box) -> List[float]:
-    return [round(b[0], 2), round(b[1], 2), round(b[2] - b[0], 2), round(b[3] - b[1], 2)]
+    # Làm tròn từng cạnh trước rồi mới tính w, h: tránh x + w vượt mép ảnh do làm tròn lệch.
+    x1, y1, x2, y2 = (round(v, 2) for v in b)
+    return [x1, y1, round(x2 - x1, 2), round(y2 - y1, 2)]
 
 
 def area(b: Box) -> float:

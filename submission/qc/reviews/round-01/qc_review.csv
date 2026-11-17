@@ -1,0 +1,61 @@
+image,object_id,error_type,reviewer,rule_id,region,note
+img_001.jpg,7,sai_thuoc_tinh,102,R-12,,Thùng xe tải bị người #1 che khoảng 10% → occluded_level phải là 1 (đang 0)
+img_002.jpg,,khong,102,,,
+img_003.jpg,57,sai_thuoc_tinh,102,R-12,,Đầu bị cắt ở mép trên → truncated=yes; chân bị xe đạp #49 che → occluded_level ≥ 1 (đang 0/no)
+img_003.jpg,54,sai_thuoc_tinh,102,R-12,,Nón chạm mép trên → truncated=yes; thân bị gánh hàng che → occluded_level 1 (đang 0/no)
+img_003.jpg,49,sai_thuoc_tinh,102,R-12,,Xe đạp bị cắt ở mép trái → truncated=yes (đang no)
+img_004.jpg,62,sai_thuoc_tinh,102,R-12,,Tài xế bị thân xe và kính che hơn 30% → occluded_level 2 (đang 0)
+img_004.jpg,61,sai_thuoc_tinh,102,R-12,,"Tài xế ngồi trong tuk-tuk, bị thân xe che 1–30% → occluded_level 1 (đang 0)"
+img_005.jpg,77,thua,102,R-01,,"Box phủ 2 người đã có box riêng (#69 mũ xanh, #85 mũ trắng) → box trùng, xóa"
+img_005.jpg,75,thua,102,R-01,,"Trùng xe máy #74 ở mép trái, box lan sang người #84 → xóa"
+img_005.jpg,65,thua,102,R-01,,"Trùng ô tô #83 ở mép trái, box lan vào thân xe van #66 → xóa"
+img_005.jpg,66,sai_thuoc_tinh,102,R-12,,Van bị người phía trước che phần lớn → occluded_level ≥ 2; chạm mép phải → truncated=yes (đang 0/no)
+img_005.jpg,84,sai_thuoc_tinh,102,R-12,,Người đeo kính bị cắt ở mép dưới → truncated=yes (đang no)
+img_006.jpg,89,sai_thuoc_tinh,102,R-12,,Taxi bị cắt ở mép trái → truncated=yes (đang no)
+img_006.jpg,120,sai_thuoc_tinh,102,R-12,,Xe đạp chạm mép dưới → truncated=yes; bị người #92 che → occluded_level 1 (đang 0/no)
+img_007.jpg,123,sai_thuoc_tinh,102,R-12,,Xe tải bị cắt ở mép phải → truncated=yes (đang no)
+img_008.jpg,153,sai_thuoc_tinh,102,R-12,,Xe máy trắng bị cắt ở mép phải và mép dưới → truncated=yes; bị người #155 che → occluded_level ≥ 1 (đang 0/no)
+img_008.jpg,144,sai_thuoc_tinh,102,R-12,,Xe máy chạm mép dưới → truncated=yes; bị xe khác che → occluded_level ≥ 1 (đang 0/no)
+img_009.jpg,,khong,102,,,
+img_010.jpg,,bo_sot,102,R-01,"xe đạp chở chuối ở giữa ảnh, khoảng x 380–620, y 230–515","Xe đạp chở hàng thấy rõ bánh và khung dưới rổ chuối, chưa có box bicycle"
+img_011.jpg,191,sai_thuoc_tinh,102,R-12,,Xe chạm mép trái và mép dưới → truncated=yes (đang no)
+img_011.jpg,208,sai_thuoc_tinh,102,R-12,,Xe chạm mép dưới → truncated=yes (đang no)
+img_011.jpg,201,sai_thuoc_tinh,102,R-12,,Xe bị tượng Predator che hơn 30% → occluded_level ≥ 2 (đang 0)
+img_012.jpg,212,sai_thuoc_tinh,102,R-12,,Xe phía sau bị bán tải #214 che khoảng nửa dưới → occluded_level 2 (đang 0)
+img_013.jpg,,khong,102,,,
+img_014.jpg,,bo_sot,102,R-10,"người lái xe máy mờ bên trái, khoảng x 0–210, y 180–690",Người lái của xe #227 mờ chuyển động nhưng nhận ra mũ và thân → cần box person
+img_015.jpg,233,sai_thuoc_tinh,102,R-12,,Xe đỏ bị cắt ở mép trái → truncated=yes (đang no)
+img_015.jpg,232,sai_thuoc_tinh,102,R-12,,Xe bạc bị cắt ở mép phải → truncated=yes (đang no)
+img_016.jpg,241,sai_thuoc_tinh,102,R-12,,Bán tải bị tuk-tuk #240 che khoảng 40% → occluded_level 2 (đang 0)
+img_016.jpg,243,sai_thuoc_tinh,102,R-12,,Ô tô bị xe máy #248 và người #244 che hơn 30% → occluded_level 2 (đang 0)
+img_017.jpg,,khong,102,,,
+img_018.jpg,254,sai_thuoc_tinh,102,R-12,,Xe sau hàng rào → occluded_level 1 (hàng rào tăng 1 mức; đang 0)
+img_018.jpg,256,sai_thuoc_tinh,102,R-12,,Xe sau hàng rào → occluded_level 1 (hàng rào tăng 1 mức; đang 0)
+img_018.jpg,257,sai_thuoc_tinh,102,R-12,,Xe sau hàng rào → occluded_level 1 (hàng rào tăng 1 mức; đang 0)
+img_019.jpg,265,sai_vi_tri_kich_thuoc,102,R-05,,"ignore_region kéo xuống tới y≈351, lấn vào kính lái xe #259 → thu lại ôm sát cụm khán giả"
+img_020.jpg,,khong,102,,,
+img_021.jpg,,bo_sot,102,R-05,"cụm người và xe máy xa phía sau, khoảng x 150–900, y 195–270","Nhiều đầu người dưới 20 px không tách được, chưa có ignore_region ôm cụm"
+img_022.jpg,368,thua,102,R-03,,Trùng xe #369; sidecar thuộc xe nên chỉ giữ 1 box #369
+img_023.jpg,,khong,102,,,
+img_024.jpg,398,sai_thuoc_tinh,102,R-12,,Xe cam bị cắt ở mép trái và mép dưới → truncated=yes (đang no)
+img_024.jpg,400,sai_thuoc_tinh,102,R-12,,Xe be bị cắt ở mép trái → truncated=yes (đang no)
+img_025.jpg,,khong,102,,,
+img_026.jpg,426,sai_thuoc_tinh,102,R-12,,Xe máy bị chân 2 người che khoảng 20% → occluded_level 1 (đang 0)
+img_027.jpg,,khong,102,,,
+img_028.jpg,427,sai_thuoc_tinh,102,R-12,,Tượng ngựa che một phần thùng bán tải → occluded_level 1 (đang 0)
+img_029.jpg,431,thua,102,R-03,,"Box ôm cả ống hàng chở dài, trùng xe máy #438. Quyết định C494 là xóa nhưng nhãn cuối vẫn còn box này"
+img_030.jpg,466,thua,102,R-06,,"Ảnh người in trên biển, không phải người thật"
+img_030.jpg,468,thua,102,R-06,,"Ảnh người in trên biển, không phải người thật"
+img_030.jpg,469,thua,102,R-06,,"Ảnh người in trên biển, không phải người thật"
+img_030.jpg,471,thua,102,R-06,,"Ảnh người in trên biển, không phải người thật"
+img_031.jpg,486,thua,102,R-01,,Cao 16 px < 20 px. Đã xóa trong CVAT task 23 sau khi xuất nhãn cuối; labels_calibrated.json chưa cập nhật
+img_032.jpg,501,thua,102,R-01,,Trùng ô tô #507 ở mép phải (cùng một xe)
+img_032.jpg,504,thua,102,R-01,,Trùng #503 (cùng một vật)
+img_033.jpg,,khong,102,,,
+img_034.jpg,,khong,102,,,
+img_035.jpg,579,sai_vi_tri_kich_thuoc,102,R-03,,Box ôm cả đống hàng chất cao trên nóc (y 37–205); chỉ được ôm thân tuk-tuk
+img_036.jpg,,khong,102,,,
+img_037.jpg,,khong,102,,,
+img_038.jpg,,khong,102,,,
+img_039.jpg,,khong,102,,,
+img_040.jpg,640,sai_thuoc_tinh,102,R-12,,Xe buýt chạm mép trên → truncated=yes (đang no)

@@ -2,7 +2,7 @@
 
 - Phiên bản: v1.0 (nháp)
 - Ngày: 2026-11-16
-- Người viết / duyệt: 2A202603076
+- Người viết / duyệt: 101
 - Loại nhãn: bounding box trên ảnh 2D · Công cụ: CVAT, xuất COCO 1.0
 - Taxonomy đi kèm: `submission/taxonomy.json` (version `v1.0`)
 
